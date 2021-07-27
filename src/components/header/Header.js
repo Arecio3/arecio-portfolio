@@ -8,7 +8,7 @@ function Header() {
                     <div className="logoContainer">
                         <a className="logo" href="/">A</a>
                     </div>
-                    <div className="burgerBtn">
+                    <div className="burgerBtn outer-shadow hover-in-shadow">
                         <span></span>
                     </div>
                 </div>
