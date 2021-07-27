@@ -1,7 +1,8 @@
+import { useState } from 'react';
 import './App.css';
 import Header from './components/header/Header';
 import NavMenu from './components/navMenu/NavMenu';
-import { useState } from "react";
+import Home from "./pages/home/Home";
 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
     <div className="App">
       <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <NavMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
+      <Home />
     </div>
   );
 }
