@@ -5,14 +5,16 @@ function Home() {
     return (
         <section className="home-section section">
             <div className="container">
-                <div className="row full-screen">
+                <div className="row full-screen align-items-center">
                     <div className="home-text">
                         <p>Hello</p>
                         <h2>I'm Arecio Canton</h2>
                         <h1>Full Stack Developer</h1>
                     </div>
                     <div className="home-img">
-                        <img src={selfie} alt="" />
+                        <div className="imgBox inner-shadow">
+                            <img src={selfie} alt="" />
+                        </div>
                     </div>
                 </div>
             </div>
