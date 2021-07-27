@@ -1,0 +1,46 @@
+@import "../../styles/color-1.css";
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.justify-content-between {
+    justify-content: space-between;
+}
+.header {
+    background-color: gray;
+    padding: 20px 15px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.logo {
+    text-decoration: none;
+    font-family: 'Great Vibes', cursive;
+}
+
+.header .logo {
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    line-height: 40px;
+    height: 40px;
+    width: 40px;
+    font-size: 24px;
+    color: var(--skin-color);
+    border: 2px solid var(--skin-color);
+}
+
+.header .burgerBtn {
+    height: 40px;
+    width: 40px;
+    background-color: blue;
+}
