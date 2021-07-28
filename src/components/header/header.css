@@ -59,13 +59,13 @@
 .header .logo {
     display: inline-block;
     text-align: center;
-    line-height: 42px;
-    height: 40px;
-    width: 40px;
-    font-size: 24px;
+    line-height: 62px;
+    height: 60px;
+    width: 60px;
+    font-size: 34px;
     color: var(--gold-color);
     border-radius: 50%;
-    border: 1px solid var(--gold-color);
+    border: 3px solid var(--gold-color);
     padding-right: 3px;
 }
 
