@@ -107,3 +107,6 @@
 .header .burgerBtn span:after {
     top: 6px;
 }
+.header {
+    height: 70px;
+}

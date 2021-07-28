@@ -1,0 +1,111 @@
+@import "../../styles/color-1.css";
+
+.about-section {
+    padding: 80px 0 80px;
+    min-height: 100vh;
+}
+
+.sectionTitle {
+    padding: 0 15px;
+    flex:0 0 100%;
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sectionTitle h2 {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--text-black-900);
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.sectionTitle h2:before {
+    content: attr(data-heading);
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--gold-color);
+}
+
+.about-section .aboutImg{
+    flex:0 0 40%;
+    max-width: 40%;
+    padding:0 15px;
+}
+
+.about-section .aboutImg .imgBox {
+    padding: 15px;
+}
+.about-section .aboutImg .imgBox img {
+    width: 100%;
+    border: 10px solid transparent;
+    border-radius: 5px;
+}
+
+.about-section .aboutImg .socialLinks {
+    margin-top: 20px;
+    text-align: center;
+}
+.about-section .aboutImg .socialLinks a {
+   display: inline-block;
+   height: 40px;
+   width: 40px;
+   font-size: 16px;
+   text-align: center;
+   line-height: 40px;
+   margin: 0 4px;
+   border-radius: 50%;
+   transition: all 0.3s ease;
+}
+
+.about-section .aboutImg .socialLinks a i {
+    line-height: 40px;
+}
+
+.about-section .aboutImg .socialLinks a:after {
+    border-radius: 50%;
+}
+
+#facebookIcon {
+    color: #385898;
+}
+
+#twitterIcon {
+    color: #1da1f2;
+}
+
+#pintrestIcon {
+    color: crimson;
+}
+
+#linkedIn {
+    color: #0a66c2;
+}
+
+#github{
+    color: var(--text-black-600);
+}
+
+.about-section .aboutInfo {
+    flex:0 0 60%;
+    max-width: 60%;
+    padding:0 15px;
+}
+
+.about-section .aboutInfo p {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 15px;
+    color: var(--text-black-600);
+}
+
+.about-section .aboutInfo span {
+    font-weight: 600;
+}
+
+.about-section .aboutInfo .btn-1 {
+    margin: 30px 20px 0 0;
+}

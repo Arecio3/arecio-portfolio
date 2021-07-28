@@ -1,5 +1,6 @@
 import './home.css';
 import selfie from "../../images/selfie.png";
+import { Link } from "react-router-dom";
 
 function Home() {
     return (
@@ -59,7 +60,7 @@ function Home() {
                         <p>Hello</p>
                         <h2>I'm Arecio Canton</h2>
                         <h1>Full Stack Developer & Web Designer</h1>
-                        <a href="/" className="btn-1 outer-shadow hover-in-shadow">About Me</a>
+                        <a href="#about" className="btn-1 outer-shadow hover-in-shadow">About Me</a>
                     </div>
                     <div className="home-img">
                         <div className="imgBox inner-shadow">
