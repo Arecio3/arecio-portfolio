@@ -11,7 +11,7 @@ function NavMenu({ menuOpen, setMenuOpen }) {
                 <ul>
                     <li onClick={() => setMenuOpen(false)}><a href="/" className="inner-shadow active">Home</a></li>
                     <li onClick={() => setMenuOpen(false)}><a href="#about" className="outer-shadow hover-in-shadow">About</a></li>
-                    <li><a href="/" className="outer-shadow hover-in-shadow">Services</a></li>
+                    <li onClick={() => setMenuOpen(false)}><a href="#services" className="outer-shadow hover-in-shadow">Services</a></li>
                     <li><a href="/" className="outer-shadow hover-in-shadow">Portfolio</a></li>
                     <li><a href="/" className="outer-shadow hover-in-shadow">Testimonials</a></li>
                     <li><a href="/" className="outer-shadow hover-in-shadow">Contact</a></li>

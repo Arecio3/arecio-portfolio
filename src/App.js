@@ -4,6 +4,7 @@ import Header from './components/header/Header';
 import NavMenu from './components/navMenu/NavMenu';
 import Home from "./pages/home/Home";
 import About from "./pages/about/About";
+import Services from "./pages/services/Services";
 import {
   BrowserRouter as Router,
   Switch,
@@ -20,6 +21,7 @@ function App() {
       <div className="sections">
       <Home />
       <About />
+      <Services />
       </div>
     </Router>
   );
