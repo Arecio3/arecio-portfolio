@@ -140,3 +140,17 @@
     flex:0 0 100%;
     max-width: 100%;
 }
+.about-section .tab-content.active {
+    animation: fadeInTop 5s ease;
+}
+
+@keyframes fadeInTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-25px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
