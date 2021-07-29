@@ -1,0 +1,103 @@
+.education {
+  padding-bottom: 80px;
+}
+
+.timeline {
+  flex: 0 0 100%;
+  max-width: 100%;
+  position: relative;
+}
+/* Timeline line  */
+.timeline:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  left: 50%;
+  top: 0;
+  background-color: var(--bg-black-100);
+}
+
+.timeline .timeline-item {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 0 15px;
+}
+
+.timeline .timeline-item:nth-child(odd) {
+  padding-right: calc(50% + 50px);
+  text-align: right;
+}
+.timeline .timeline-item:nth-child(even) {
+  padding-left: calc(50% + 50px);
+}
+
+.timeline .timelineItemInner {
+  padding: 30px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.timeline .timelineItemInner:before {
+   content: '';
+   position: absolute;
+   width: 30px;
+   height: 1px;
+   background-color: var(--bg-black-100);
+   top: 37px;
+   z-index: -1;
+}
+
+.timeline .timeline-item:nth-child(odd) .timelineItemInner:before {
+    right: -30px;
+}
+.timeline .timeline-item:nth-child(even) .timelineItemInner:before {
+    left: -30px;
+}
+
+.gradIcon {
+   height: 40px;
+   width: 40px;
+   text-align: center;
+   line-height: 40px;
+   background-color: var(--navy-color);
+   color: var(--gold-color);
+   position: absolute;
+   top: 18px;
+   border: 1px solid var(--bg-black-100);
+   border-radius: 50%;
+   font-size: 16px;
+
+}
+
+.timeline .timeline-item:nth-child(odd) .gradIcon {
+    right: -70px;
+}
+.timeline .timeline-item:nth-child(even) .gradIcon {
+    left: -70px;
+}
+
+.timeline .timelineItemInner span {
+    font-weight: 500;
+    color: var(--gold-color);
+    display: block;
+    margin: 0 0 10px;
+}
+.timeline .timelineItemInner h3 {
+    font-size: 20px;
+    color: var(--text-black-700);
+    font-weight: 600;
+    margin: 0 0 5px;
+}
+.timeline .timelineItemInner h4 {
+    font-size: 16px;
+    font-style: italic;
+    color: var(--text-black-600);
+    margin: 0;
+}
+.timeline .timelineItemInner p {
+    font-size: 16px;
+    color: var(--text-black-600);
+    line-height: 26px;
+    margin: 15px 0 0;
+}

@@ -1,9 +1,17 @@
-import { Link } from "react-router-dom";
 import './about.css';
+import { useState } from 'react';
 import Me from "../../images/selfie.png";
 import Experience from "../../components/experience/Experience";
+import Education from "../../components/education/Education";
+import Skills from '../../components/skills/Skills';
 
 function About() {
+    const [selected, setSelected] = useState(1);
+
+    const setActive = (index) => {
+        setSelected(index)
+    }
+
     return (
         <section className="about-section section" id="about">
             <div className="container">
@@ -49,131 +57,14 @@ function About() {
                 {/* About tabs start */}
                 <div className="row">
                     <div className="aboutTabs">
-                        <span className="tab-item outer-shadow active" data-target=".skills">Skills</span>
-                        <span className="tab-item" data-target=".experience">Experience</span>
-                        <span className="tab-item" data-target=".education">Education</span>
+                        <span className={selected === 1 ? "tab-item outer-shadow active" : "tab-item"} data-target=".skills" onClick={() => setActive(1)}>Skills</span>
+                        <span className={selected === 2 ? "tab-item outer-shadow active" : "tab-item"} data-target=".experience" onClick={() => setActive(2)}>Experience</span>
+                        <span className={selected === 3 ? "tab-item outer-shadow active" : "tab-item"} data-target=".education" onClick={() => setActive(3)}>Education</span>
                     </div>
                 </div>
                 {/* About tabs end */}
-                {/* Skills start */}
-                <div className="row">
-                    <div className="skills tab-content">
-                        <div className="row">
-                            {/* skill item start */}
-                            <div className="skillItem">
-                                <p>HTML</p>
-                                <div className="progress inner-shadow">
-                                    <div className="progress-bar" style={{width: `calc(90% - 14px)`}}>
-                                        <span>90%</span>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* Skill item end */}
-                            {/* skill item start */}
-                            <div className="skillItem">
-                                <p>JavaScript</p>
-                                <div className="progress inner-shadow">
-                                    <div className="progress-bar" style={{width: `calc(70% - 14px)`}}>
-                                        <span>70%</span>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* Skill item end */}
-                            {/* skill item start */}
-                            <div className="skillItem">
-                                <p>CSS</p>
-                                <div className="progress inner-shadow">
-                                    <div className="progress-bar" style={{width: `calc(70% - 14px)`}}>
-                                        <span>70%</span>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* Skill item end */}
-                            {/* skill item start */}
-                            <div className="skillItem">
-                                <p>React JS</p>
-                                <div className="progress inner-shadow">
-                                    <div className="progress-bar" style={{width: `calc(55% - 14px)`}}>
-                                        <span>55%</span>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* Skill item end */}
-                            {/* skill item start */}
-                            <div className="skillItem">
-                                <p>Next JS</p>
-                                <div className="progress inner-shadow">
-                                    <div className="progress-bar" style={{width: `calc(45% - 14px)`}}>
-                                        <span>45%</span>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* Skill item end */}
-                            {/* skill item start */}
-                            <div className="skillItem">
-                                <p>Node JS</p>
-                                <div className="progress inner-shadow">
-                                    <div className="progress-bar" style={{width: `calc(65% - 14px)`}}>
-                                        <span>65%</span>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* Skill item end */}
-                            {/* skill item start */}
-                            <div className="skillItem">
-                                <p>Sass</p>
-                                <div className="progress inner-shadow">
-                                    <div className="progress-bar" style={{width: `calc(25% - 14px)`}}>
-                                        <span>25%</span>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* Skill item end */}
-                            {/* skill item start */}
-                            <div className="skillItem">
-                                <p>Bootstrap</p>
-                                <div className="progress inner-shadow">
-                                    <div className="progress-bar" style={{width: `calc(50% - 14px)`}}>
-                                        <span>50%</span>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* Skill item end */}
-                            {/* skill item start */}
-                            <div className="skillItem">
-                                <p>Tailwind</p>
-                                <div className="progress inner-shadow">
-                                    <div className="progress-bar" style={{width: `calc(20% - 14px)`}}>
-                                        <span>20%</span>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* Skill item end */}
-                            {/* skill item start */}
-                            <div className="skillItem">
-                                <p>mySQL</p>
-                                <div className="progress inner-shadow">
-                                    <div className="progress-bar" style={{width: `calc(55% - 14px)`}}>
-                                        <span>55%</span>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* Skill item end */}
-                            {/* skill item start */}
-                            <div className="skillItem">
-                                <p>noSQL</p>
-                                <div className="progress inner-shadow">
-                                    <div className="progress-bar" style={{width: `calc(80% - 14px)`}}>
-                                        <span>80%</span>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* Skill item end */}
-                        </div>
-                    </div>
-                </div>
-                {/* Skills end */}
-                <Experience />
+                {selected === 1 ? <Skills /> : selected === 2 ?
+                <Experience /> :  <Education />}
             </div>
         </section>
     )
