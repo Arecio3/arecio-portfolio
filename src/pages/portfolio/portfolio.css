@@ -1,0 +1,34 @@
+.portfolio-section {
+    padding: 80px 0 80px;
+    min-height: 100vh;
+}
+.sectionTitle {
+    margin-bottom: 40px;
+}
+
+.portfolioFilter {
+    padding: 0 15px;
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+}
+
+.filterItem {
+    display: inline-block;
+    margin:0 5px 10px;
+    padding: 5px 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 500;
+    color: var(--text-black-600);
+    transition: all 0.3s ease;
+    font-size: 16px;
+}
+
+.filterItem.active {
+    color: var(--gold-color);
+}
+
+.filterItem:hover:not(.active) {
+    opacity: 0.6;
+}
