@@ -19,6 +19,19 @@ function Portfolio() {
                     </div>
                 </div>
                 {/* Filter end */}
+
+                {/* Portfolio Projects start */}
+                <div className="row portfolio-items">
+                    {/* portfolio items start */}
+                    <div className="portfolio-item">
+                        <div className="portfolio-item-inner">
+                            <div className="portfolio-item-img"></div>
+                            <p className="portfolio-item-title"></p>
+                        </div>
+                    </div>
+                    {/* portfolio items start */}
+                </div>
+                {/* Portfolio Projects end */}
             </div>
         </section>
     )
