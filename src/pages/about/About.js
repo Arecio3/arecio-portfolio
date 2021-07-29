@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import './about.css';
 import Me from "../../images/selfie.png";
-import Skills from "../../components/skills/Skills";
+import Experience from "../../components/experience/Experience";
 
 function About() {
     return (
@@ -173,6 +173,7 @@ function About() {
                     </div>
                 </div>
                 {/* Skills end */}
+                <Experience />
             </div>
         </section>
     )
