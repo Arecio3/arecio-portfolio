@@ -1,7 +1,6 @@
 import './about.css';
 import { useState } from 'react';
 import Me from "../../images/selfie.png";
-import Experience from "../../components/experience/Experience";
 import Education from "../../components/education/Education";
 import Skills from '../../components/skills/Skills';
 
@@ -58,13 +57,12 @@ function About() {
                 <div className="row">
                     <div className="aboutTabs">
                         <span className={selected === 1 ? "tab-item outer-shadow active" : "tab-item"} data-target=".skills" onClick={() => setActive(1)}>Skills</span>
-                        <span className={selected === 2 ? "tab-item outer-shadow active" : "tab-item"} data-target=".experience" onClick={() => setActive(2)}>Experience</span>
-                        <span className={selected === 3 ? "tab-item outer-shadow active" : "tab-item"} data-target=".education" onClick={() => setActive(3)}>Education</span>
+                        <span className={selected === 2 ? "tab-item outer-shadow active" : "tab-item"} data-target=".education" onClick={() => setActive(2)}>Education</span>
                     </div>
                 </div>
                 {/* About tabs end */}
-                {selected === 1 ? <Skills /> : selected === 2 ?
-                <Experience /> :  <Education />}
+                {selected === 1 ? <Skills /> :
+                 <Education />}
             </div>
         </section>
     )

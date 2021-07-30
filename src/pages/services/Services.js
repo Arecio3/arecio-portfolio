@@ -14,7 +14,7 @@ function Services() {
                     <div className="service-item">
                         <div className="service-item-inner outer-shadow">
                             <div className="icon inner-shadow">
-                                <i class="fas fa-mobile-alt"></i>
+                                <i className="fas fa-mobile-alt"></i>
                             </div>
                             <h3>Responsive Design</h3>
                             <p>Now a days with how powerful phones, tablets, and laptops have become I make sure to build my sites with mobile design first and scale up. I don't know what device my client will use to visit my sites so I make sure to accommodate for all different screen sizes.</p>
@@ -25,7 +25,7 @@ function Services() {
                     <div className="service-item">
                         <div className="service-item-inner outer-shadow">
                             <div className="icon inner-shadow">
-                            <i class="fas fa-laptop-code"></i>
+                            <i className="fas fa-laptop-code"></i>
                             </div>
                             <h3>Web Design</h3>
                             <p>With the help of React and frameworks such as Tailwind, Bootstrap, Material UI, and even Photoshop my web design skills are improving and becoming more unique with the help of these different frameworks.</p>
@@ -36,7 +36,7 @@ function Services() {
                     <div className="service-item">
                         <div className="service-item-inner outer-shadow">
                             <div className="icon inner-shadow">
-                                <i class="fas fa-server"></i>
+                                <i className="fas fa-server"></i>
                             </div>
                             <h3>Backend Development</h3>
                             <p>Understanding API's, Server Side Rendering, User Authentication, and sessions with the help of Firebase, Express, Node, and Axios</p>
@@ -47,7 +47,7 @@ function Services() {
                     <div className="service-item">
                         <div className="service-item-inner outer-shadow">
                             <div className="icon inner-shadow">
-                            <i class="fas fa-brain"></i>
+                            <i className="fas fa-brain"></i>
                             </div>
                             <h3>Bi-lingual</h3>
                             <p>I speak, read, and write fluent spanish.</p>
@@ -58,7 +58,7 @@ function Services() {
                     <div className="service-item">
                         <div className="service-item-inner outer-shadow">
                             <div className="icon inner-shadow">
-                            <i class="fas fa-database"></i>
+                            <i className="fas fa-database"></i>
                             </div>
                             <h3>Data Management</h3>
                             <p>Understanding noSQL collection based database system with MongoDB or Firebase or even relational database structure such as mySQL</p>
@@ -69,7 +69,7 @@ function Services() {
                     <div className="service-item">
                         <div className="service-item-inner outer-shadow">
                             <div className="icon inner-shadow">
-                                <i class="fas fa-code"></i>
+                                <i className="fas fa-code"></i>
                             </div>
                             <h3>Clean Code</h3>
                             <p>Commenting out my code, file structure obeying separation of concerns, and semantic class names and ID's</p>

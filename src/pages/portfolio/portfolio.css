@@ -1,3 +1,6 @@
+@import '../../styles/color-1.css';
+
+
 .portfolio-section {
     padding: 80px 0 80px;
     min-height: 100vh;
@@ -11,6 +14,7 @@
     flex: 0 0 100%;
     max-width: 100%;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .filterItem {
@@ -31,4 +35,58 @@
 
 .filterItem:hover:not(.active) {
     opacity: 0.6;
+}
+
+.portfolio-item {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+ .portfolio-item-inner {
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+.portfolio-item-img img {
+    border-radius: 5px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.portfolio-section .portfolio-item-inner:hover .portfolio-item-img img {
+    transform: translateY(-25px);
+}
+
+.portfolio-item-img {
+    position: relative;
+}
+ 
+.portfolio-item-details {
+    display: none;
+}
+
+.portfolio-section .portfolio-item-inner:hover .view-project {
+    transform: translateY(0px);
+}
+
+.view-project {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--gold-color);
+    transition: all 0.3s ease;
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    transform: translateY(-5px);
+    z-index: -1;
+}
+
+.portfolio-item-inner > p {
+    font-size: 16px;
+    margin: 10px 0 0;
+    color: var(--text-black-600);
+    font-weight: bold;
 }
