@@ -1,0 +1,48 @@
+@import "../../styles/color-1.css";
+
+.blog-popup {
+    background-color: var(--bg-black-50);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.pp-img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.pp-main {
+    min-height: 100vh;
+    max-width: 1350px;
+    width: 85%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pp-main-inner {
+    background-color: violet;
+    padding: 70px 0 50px;
+    position: relative;
+}
+
+.pp-projects-details-btn {
+    position: absolute;
+    left: 0;
+    background-color: red;
+}
+
+.pp-close {
+    position: absolute;
+    right: 0;
+    background-color: blue;
+}

@@ -4,8 +4,11 @@ import Searchy from '../../images/searchy1.png';
 import Documaker from '../../images/documaker2.png';
 import Hermes from '../../images/hermes1.png';
 import StockChasr from '../../images/stockchasr1.png';
+import PopUp from '../../components/popup/PopUp';
+
 function Portfolio() {
     return (
+    <div>
         <section className="portfolio-section section" id="portfolio">
             <div className="container">
                 <div className="row">
@@ -175,6 +178,8 @@ function Portfolio() {
                 {/* Portfolio Projects end */}
             </div>
         </section>
+        <PopUp />
+    </div>
     )
 }
 
