@@ -43,6 +43,7 @@ function Portfolio() {
                                 <div className="row">
                                     <div className="description">
                                         <h3>Project Brief:</h3>
+                                        <p>A full stack application with user auth where you can write, publish, and view other users blog post after making an account.</p>
                                     </div>
                                     <div className="info">
                                         <h3>Project Info</h3>
