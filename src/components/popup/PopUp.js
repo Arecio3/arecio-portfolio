@@ -2,6 +2,7 @@ import './popup.css';
 import blog1 from '../../images/blog1.png';
 
 function PopUp() {
+
     return (
         <div>
             <div className="pp blog-popup">
