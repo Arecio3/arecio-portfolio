@@ -1,160 +1,58 @@
-import '../../pages/portfolio/portfolio.css';
-import Blog from '../../images/blog1.png';
-import Searchy from '../../images/searchy1.png';
-import Documaker from '../../images/documaker2.png';
-import Hermes from '../../images/hermes1.png';
-import StockChasr from '../../images/stockchasr1.png';
+import { useState } from 'react';
+import Popup from '../../components/popup/PopUp';
+import './allprojects.css';
 
-function AllProjects() {
+function AllProjects({ title, image, url, category, repo, description, tools, id }) {
+    const [open, setOpen] = useState(0);
+
+    console.log(open);
+
     return (
         <div className="row portfolio-items">
-                    {/* portfolio items start */}
-                    <div className="portfolio-item">
-                        <div className="portfolio-item-inner outer-shadow">
-                            <div className="portfolio-item-img">
-                                <img src={Blog} alt="" data-category="full-stack" data-screenshots="images/blog2.png, images/blog3.png, images/blog4.png, images/blog5.png, images/blog6.png, images/blog7.png"/>
-                                {/* View Project Button */}
-                                <span className="view-project" >View Project</span>
+            {/* portfolio items start */}
+            <div className="portfolio-item">
+                <div className="portfolio-item-inner outer-shadow">
+                    <div className="portfolio-item-img" >
+                        <img src={image} alt="" data-category="full-stack" data-screenshots="images/blog2.png, images/blog3.png, images/blog4.png, images/blog5.png, images/blog6.png, images/blog7.png" />
+                        {/* View Project Button */}
+                         <span className="view-project" onClick={(e) => setOpen(e.target.id)}>View Project</span>
+                        { open > 0  ? <Popup title={title} image={image} url={url} id={setOpen} category={category} repo={repo} description={description} tools={tools} open={open} setOpen={setOpen} /> : ''} 
+                    </div>
+                    <p className="portfolio-item-title">{title}</p>
+                    {/* Portfolio items details start */}
+                    <div className="portfolio-item-details">
+                        <div className="row">
+                            <div className="description">
+                                <h3>Project Brief:</h3>
+                                <p>{description}</p>
                             </div>
-                            <p className="portfolio-item-title">Deep Thoughts</p>
-                            {/* Portfolio items details start */}
-                            <div className="portfolio-item-details">
-                                <div className="row">
-                                    <div className="description">
-                                        <h3>Project Brief:</h3>
-                                        <p>A full stack application with user auth where you can write, publish, and view other users blog post after making an account.</p>
-                                    </div>
-                                    <div className="info">
-                                        <h3>Project Info</h3>
-                                        <ul>
-                                            <li>Date - <span>2021</span></li>
-                                            <li>Tools - <span>React JS, Multer, Mongoose, Express, Bcrypt</span></li>
-                                            <li>Site - <span>N/A</span></li>
-                                        </ul>
-                                    </div>
-                                </div>
+                            <div className="info">
+                                <h3>Project Info</h3>
+                                <ul>
+                                    <li>Site - <span>{url}</span></li>
+                                    <li>Site - <span>{repo}</span></li>
+                                    <li>Date - <span>2021</span></li>
+                                    <li>Tools - <span>{tools}</span></li>
+                                </ul>
                             </div>
-                            {/* Portfolio items details end */}
                         </div>
                     </div>
-                    {/* portfolio item  */}
-                    {/* portfolio items start */}
-                    <div className="portfolio-item">
-                        <div className="portfolio-item-inner outer-shadow">
-                            <div className="portfolio-item-img">
-                                <img src={Searchy} alt="" data-category="full-stack" data-screenshots="images/searchy1.png, images/searchy2.png, images/searchyMobile1.png, images/searchyMobile2.png"/>
-                                {/* View Project Button */}
-                                <span className="view-project" >View Project</span>
-                            </div>
-                            <p className="portfolio-item-title">Searchy</p>
-                            {/* Portfolio items details start */}
-                            <div className="portfolio-item-details">
-                                <div className="row">
-                                    <div className="description">
-                                        <h3>Project Brief:</h3>
-                                    </div>
-                                    <div className="info">
-                                        <h3>Project Info</h3>
-                                        <ul>
-                                            <li>Date - <span>2021</span></li>
-                                            <li>Tools - <span>React JS, Next JS, Tailwind</span></li>
-                                            <li>Site - <span><a href="https://searchy.vercel.app/"></a></span></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* Portfolio items details end */}
-                        </div>
-                    </div>
-                    {/* portfolio item  */}
-                    {/* portfolio items start */}
-                    <div className="portfolio-item">
-                        <div className="portfolio-item-inner outer-shadow">
-                            <div className="portfolio-item-img">
-                                <img src={Documaker} alt="" data-category="full-stack" data-screenshots="images/documaker1.png, images/documaker2.png, images/documaker3.png, images/documaker4.png, images/documaker5.png"/>
-                                {/* View Project Button */}
-                                <span className="view-project" >View Project</span>
-                            </div>
-                            <p className="portfolio-item-title">Documaker</p>
-                            {/* Portfolio items details start */}
-                            <div className="portfolio-item-details">
-                                <div className="row">
-                                    <div className="description">
-                                        <h3>Project Brief:</h3>
-                                    </div>
-                                    <div className="info">
-                                        <h3>Project Info</h3>
-                                        <ul>
-                                            <li>Date - <span>2021</span></li>
-                                            <li>Tools - <span>React JS, Next JS, Next-Auth, Tailwind, firebase, draft-js, draft-js-wysiwyg, Material-tailwind/react</span></li>
-                                            <li>Site - <span><a href="https://documaker-arecio3.vercel.app/">Documaker</a></span></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* Portfolio items details end */}
-                        </div>
-                    </div>
-                    {/* portfolio item  */}
-                    {/* portfolio items start */}
-                    <div className="portfolio-item">
-                        <div className="portfolio-item-inner outer-shadow">
-                            <div className="portfolio-item-img">
-                                <img src={Hermes} alt="" data-category="full-stack" data-screenshots="images/hermes1.png, images/hermes2.png, images/hermesMobile.png"/>
-                                {/* View Project Button */}
-                                <span className="view-project" >View Project</span>
-                            </div>
-                            <p className="portfolio-item-title">Hermes</p>
-                            {/* Portfolio items details start */}
-                            <div className="portfolio-item-details">
-                                <div className="row">
-                                    <div className="description">
-                                        <h3>Project Brief:</h3>
-                                    </div>
-                                    <div className="info">
-                                        <h3>Project Info</h3>
-                                        <ul>
-                                            <li>Date - <span>2021</span></li>
-                                            <li>Tools - <span>React JS, Next JS, Firebase, Moment, email-validator, Material UI</span></li>
-                                            <li>Site - <span><a href="https://hermes-nine.vercel.app/">Hermes</a></span></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* Portfolio items details end */}
-                        </div>
-                    </div>
-                    {/* portfolio item  */}
-                    {/* portfolio items start */}
-                    <div className="portfolio-item">
-                        <div className="portfolio-item-inner outer-shadow">
-                            <div className="portfolio-item-img">
-                                <img src={StockChasr} alt="" data-category="full-stack" data-screenshots="images/stockchasr1.png, images/stockchasr2.png, images/stockchasr3.png"/>
-                                {/* View Project Button */}
-                                <span className="view-project" >View Project</span>
-                            </div>
-                            <p className="portfolio-item-title">StockChasr</p>
-                            {/* Portfolio items details start */}
-                            <div className="portfolio-item-details">
-                                <div className="row">
-                                    <div className="description">
-                                        <h3>Project Brief:</h3>
-                                    </div>
-                                    <div className="info">
-                                        <h3>Project Info</h3>
-                                        <ul>
-                                            <li>Date - <span>2021</span></li>
-                                            <li>Tools - <span>React JS, Canvas JS, Material UI, Express, Passport, Mongoose</span></li>
-                                            <li>Site - <span><a href="https://stockchasr.herokuapp.com/">StockChasr</a></span></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* Portfolio items details end */}
-                        </div>
-                    </div>
-                    {/* portfolio item  */}
                 </div>
+            </div>
+
+            {/* <div className="separator"></div> */}
+
+            { open === true ? <div className="pp-main">
+                <div className="pp-main-inner">
+                    <div className="pp-project-details-btn outer-shadow hover-in-shadow">Project Details <i className="fas fa-plus"></i></div>
+                    <div className="pp-close outer-shadow hover-in-shadow">&times;</div>
+                    <img src={image} alt="" className="pp-img outer-shadow" />
+                </div>
+            </div> : ''}
+
+
+
+        </div >
     )
 }
 

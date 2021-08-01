@@ -1,5 +1,5 @@
 import "./navmenu.css"
-import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function NavMenu({ menuOpen, setMenuOpen }) {
 
@@ -9,12 +9,12 @@ function NavMenu({ menuOpen, setMenuOpen }) {
             <div onClick={(e) => setMenuOpen(false)} className="close-nav-menu outer-shadow hover-in-shadow">&times;</div>
             <div className="nav-menu-inner">
                 <ul>
-                    <li onClick={() => setMenuOpen(false)}><a href="/" className="inner-shadow active">Home</a></li>
-                    <li onClick={() => setMenuOpen(false)}><a href="#about" className="outer-shadow hover-in-shadow">About</a></li>
-                    <li onClick={() => setMenuOpen(false)}><a href="#services" className="outer-shadow hover-in-shadow">Services</a></li>
-                    <li onClick={() => setMenuOpen(false)}><a href="#portfolio" className="outer-shadow hover-in-shadow">Portfolio</a></li>
-                    <li><a href="/" className="outer-shadow hover-in-shadow">Testimonials</a></li>
-                    <li><a href="/" className="outer-shadow hover-in-shadow">Contact</a></li>
+                   <Link to='/'><li onClick={() => setMenuOpen(false)} className="inner-shadow active">Home</li></Link>
+                   <Link to='/about'><li onClick={() => setMenuOpen(false)} className="outer-shadow hover-in-shadow">About</li></Link>
+                   <Link to='/services'><li onClick={() => setMenuOpen(false)}className="outer-shadow hover-in-shadow">Services</li></Link>
+                   <Link to='/portfolio'><li onClick={() => setMenuOpen(false)}className="outer-shadow hover-in-shadow">Portfolio</li></Link>
+                    <li className="outer-shadow hover-in-shadow">Testimonials</li>
+                    <li className="outer-shadow hover-in-shadow">Contact</li>
                 </ul>
             </div>
             {/* Copyright */}

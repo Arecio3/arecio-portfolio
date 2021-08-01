@@ -44,6 +44,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .nav-menu ul {
@@ -55,22 +56,21 @@
     text-align: center;
 }
 
-.nav-menu ul li:last-child {
-    margin-bottom: 0;
-}
 
-.nav-menu ul li a {
+
+.nav-menu li {
     display: inline-block;
     font-size: 28px;
     font-weight: 600;
     color: var(--text-black-700);
     padding: 5px 30px;
     text-transform: capitalize;
+    margin-top: 10px;
     border-radius: 30px;
     transition: all 0.3s ease;
 }
 
-.nav-menu ul li a:after {
+.nav-menu ul li:after {
     border-radius: 30px;
 }
 
@@ -78,7 +78,7 @@
     box-shadow: var( --inner-shadow);
 }
 
-.nav-menu ul li a.active {
+.nav-menu ul li.active {
     color: var(--gold-color);
 }
 

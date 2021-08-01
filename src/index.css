@@ -13,6 +13,10 @@ body {
   overflow-x: hidden;
 }
 
+body.stop-scrolling {
+  overflow-y: hidden;
+}
+
 * {
   margin: 0;
   padding: 0;

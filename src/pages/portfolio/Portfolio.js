@@ -1,38 +1,79 @@
 import './portfolio.css';
 import PopUp from '../../components/popup/PopUp';
-import All from '../../components/allProjects/AllProjects';
-import { useState } from 'react';
+import AllProjects from '../../components/allProjects/AllProjects';
+import { useState, useEffect } from 'react';
+import FullStack from '../../data';
 
 function Portfolio() {
-    const [selected, setSelected] = useState(1);
+    const [selected, setSelected] = useState("All");
+    const [data, setData] = useState([]);
+    // const myData = FullStack;
 
-    const setActive = (index) => {
-        setSelected(index)
+    const setFull = () => {
+        setSelected("Full Stack")
     }
+
+    useEffect(() => {
+        switch (selected) {
+            case "All":
+                setData(FullStack);
+                break;
+            case "FullStack":
+                setData(FullStack);
+            default:
+                setData(FullStack);
+        }
+
+    }, [selected, setSelected])
     return (
-    <div>
-        <section className="portfolio-section section" id="portfolio">
-            <div className="container">
-                <div className="row">
-                    <div className="sectionTitle">
-                        <h2 data-heading="Portfolio">Latest Projects</h2>
+        <div>
+            <section className="portfolio-section section">
+                <div className="container">
+                    <div className="row">
+                        <div className="sectionTitle">
+                            <h2 data-heading="Portfolio">Latest Projects</h2>
+                        </div>
                     </div>
-                </div>
-                {/* Filter starts */}
-                <div className="row">
-                    <div className="portfolioFilter">
-                        <span className={selected === 1 ? "filterItem outer-shadow active" : "filterItem"} data-target="all"  onClick={() => setActive(1)}>All</span>
-                        <span className={selected === 2 ? "filterItem outer-shadow active" : "filterItem"} data-target="full-stack"  onClick={() => setActive(2)}>Full Stack</span>
-                        <span className={selected === 3 ? "filterItem outer-shadow active" : "filterItem"} data-target="web-application"  onClick={() => setActive(3)}>Web Applications</span>
-                        <span className={selected === 4 ? "filterItem outer-shadow active" : "filterItem"} data-target="mobile-apps"  onClick={() => setActive(4)}>Mobile Apps</span>
+                    {/* Filter starts */}
+                    <div className="row">
+                        <div className="portfolioFilter">
+                            <span className={selected === "All" ? "filterItem outer-shadow active" : "filterItem"} data-target="all" onClick={() => setSelected("All")}>All</span>
+                            <span className={selected === "Full Stack" ? "filterItem outer-shadow active" : "filterItem"} data-target="full-stack" onClick={() => setFull("Full Stack")}>Full Stack</span>
+                        </div>
                     </div>
+                    {selected === "All" ? <div>
+                        {data.map((project) => (
+                            <AllProjects
+                                key={project.id}
+                                id={project.id}
+                                title={project.title}
+                                tools={project.tools}
+                                description={project.description}
+                                url={project.URL}
+                                image={project.image}
+                                category={project.category}
+                                repo={project.repo}
+                            />
+                        ))}
+                    </div> : ''}
+                    {selected === "Full Stack" ? <div>
+                        {data.map((project) => (
+                            <AllProjects
+                                key={project.id}
+                                title={project.title}
+                                tools={project.tools}
+                                description={project.description}
+                                url={project.url}
+                                image={project.image}
+                                category={project.category}
+                                repo={project.repo}
+                            />
+                        ))}
+                    </div> : ''}
+                    {/* Filter end */}
                 </div>
-                {selected === 1 ? <All /> : selected === 2 ? <All /> :  <All />}
-                {/* Filter end */}
-            </div>
-        </section>
-        <PopUp />
-    </div>
+            </section>
+        </div>
     )
 }
 

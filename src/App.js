@@ -6,6 +6,7 @@ import Home from "./pages/home/Home";
 import About from "./pages/about/About";
 import Services from "./pages/services/Services";
 import Portfolio from "./pages/portfolio/Portfolio";
+import Popup from './components/popup/PopUp';
 
 import {
   BrowserRouter as Router,
@@ -20,12 +21,22 @@ function App() {
     <Router className="App">
       <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <NavMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      <div className="sections">
-      <Home />
-      <About />
-      <Services />
-      <Portfolio />
-      </div>
+
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route  path="/about">
+          <About />
+        </Route>
+        <Route path="/services">
+          <Services />
+        </Route>
+        <Route path="/portfolio">
+          <Portfolio />
+        </Route>
+      </Switch>
+
     </Router>
   );
 }
