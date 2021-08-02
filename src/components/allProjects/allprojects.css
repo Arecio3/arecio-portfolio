@@ -1,3 +1,7 @@
 .portfolio-items .portfolio-item {
     display: inline-block;
 }
+
+.display-none {
+    display: none;
+}
