@@ -13,6 +13,7 @@ function Portfolio() {
         setSelected("Full Stack")
     }
 
+
     useEffect(() => {
         switch (selected) {
             case "All":

@@ -92,26 +92,22 @@
     font-size: 16px;
     font-weight: 500;
     color: var(--gold-color);
-    position: absolute;
-    /* margin-right: 0;
+    position: relative;
+    bottom: 1px;
     padding: 5px;
-    margin: 10px 0 0; */
-    left: 0;
-    bottom: 3px;
-    transition: all 0.3s ease;
-     transform: translateY(-5px);
-    z-index: -1; 
+    z-index: 1000;
 }
-/* .view-project:hover {
+
+.view-project:hover {
     background-color: var(--bg-black-100);
     padding: 5px;
     border-radius: 5px;
-} */
+}
 
 .portfolio-item-inner > p {
     font-size: 16px;
-    /* padding: 5px; */
-    margin: 10px 0 0;
+    padding: 5px;
+    /* margin: 10px 0 0; */
     color: var(--text-black-600);
     font-weight: bold;
 }
