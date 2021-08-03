@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import Popup from '../popup/PopUp';
 // import '../../pages/portfolio/portfolio.css';
 import './allprojects.css';
 
@@ -55,9 +54,9 @@ function AllProjects({ id, handleClose, title,tools,description, url, image,cate
                 </div>
             </div>
 
-            {project &&  clicked ? 
-                <div className={project && clicked ? "blog-popup active" : "blog-popup"}>
-                    <div className={project && clicked && info ? "pp-details active" : "pp-details"}>
+            {project && clicked === id ? 
+                <div className="blog-popup-active">
+                    <div className="pp-details-active">
                         <div className="pp-details-inner">
                             <div className="pp-title">
                                 <h2>{title}</h2>

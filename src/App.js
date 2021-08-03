@@ -6,7 +6,6 @@ import Home from "./pages/home/Home";
 import About from "./pages/about/About";
 import Services from "./pages/services/Services";
 import Portfolio from "./pages/portfolio/Portfolio";
-import Popup from './components/popup/PopUp';
 
 import {
   BrowserRouter as Router,

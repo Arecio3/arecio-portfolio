@@ -1,6 +1,5 @@
 @import '../../styles/color-1.css';
 @import '../about/about.css';
-@import '../../components/popup/popup.css';
 
 .portfolio-items {
     display: inline-block;
@@ -95,7 +94,6 @@
     position: relative;
     bottom: 1px;
     padding: 5px;
-    z-index: 1000;
 }
 
 .view-project:hover {

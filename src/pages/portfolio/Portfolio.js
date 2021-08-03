@@ -32,6 +32,7 @@ function Portfolio() {
                 setData(FullStack);
             default:
                 setData(FullStack);
+                break;
         }
 
     }, [selected, setSelected])
