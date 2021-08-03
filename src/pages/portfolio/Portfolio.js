@@ -1,17 +1,26 @@
 import './portfolio.css';
-import PopUp from '../../components/popup/PopUp';
 import AllProjects from '../../components/allProjects/AllProjects';
 import { useState, useEffect } from 'react';
 import FullStack from '../../data';
 
 function Portfolio() {
     const [selected, setSelected] = useState("All");
+    const [clicked, setClicked] = useState(false);
     const [data, setData] = useState([]);
     // const myData = FullStack;
 
     const setFull = () => {
         setSelected("Full Stack")
     }
+
+    // const getProject = () => {
+    //     setClicked(true);
+    // }
+
+    const handleClose = () => {
+        setClicked(false);
+    }
+    
 
 
     useEffect(() => {
@@ -28,15 +37,15 @@ function Portfolio() {
     }, [selected, setSelected])
     return (
         <div>
-            <section className="portfolio-section section">
+            <section className="portfolio-section">
                 <div className="container">
-                    <div className="row">
+                    <div className={clicked ? "close" : "row"}>
                         <div className="sectionTitle">
                             <h2 data-heading="Portfolio">Latest Projects</h2>
                         </div>
                     </div>
                     {/* Filter starts */}
-                    <div className="row">
+                    <div className={clicked ? "close" : "row"}>
                         <div className="portfolioFilter">
                             <span className={selected === "All" ? "filterItem outer-shadow active" : "filterItem"} data-target="all" onClick={() => setSelected("All")}>All</span>
                             <span className={selected === "Full Stack" ? "filterItem outer-shadow active" : "filterItem"} data-target="full-stack" onClick={() => setFull("Full Stack")}>Full Stack</span>
@@ -54,6 +63,10 @@ function Portfolio() {
                                 image={project.image}
                                 category={project.category}
                                 repo={project.repo}
+                                clicked={clicked}
+                                setClicked={setClicked}
+                                handleClose={handleClose}
+
                             />
                         ))}
                     </div> : ''}
@@ -68,6 +81,9 @@ function Portfolio() {
                                 image={project.image}
                                 category={project.category}
                                 repo={project.repo}
+                                clicked={clicked}
+                                setClicked={setClicked}
+
                             />
                         ))}
                     </div> : ''}

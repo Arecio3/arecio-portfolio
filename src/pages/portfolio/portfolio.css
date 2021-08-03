@@ -5,11 +5,14 @@
 .portfolio-items {
     display: inline-block;
 }
-
+.close {
+    display: none;
+}
 .portfolio-section {
     padding: 80px 0 80px;
     min-height: 100vh;
 }
+
 .sectionTitle {
     margin-bottom: 40px;
 }
@@ -52,13 +55,7 @@
     display: flex;
     flex-wrap: wrap;
 }
-.portfolio-item.hide {
-    display: none;
-}
-.portfolio-item.show {
-     display: block;
-     animation: fadeInTop 0.5 ease;
-}
+
  .portfolio-item-inner {
     padding: 15px;
     border-radius: 5px;
@@ -78,6 +75,9 @@
 
 .portfolio-item-img {
     position: relative;
+}
+.portfolio-item-img-close {
+    display: none;
 }
  
 .portfolio-item-details {

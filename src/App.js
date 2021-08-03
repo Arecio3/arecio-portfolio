@@ -17,6 +17,7 @@ import {
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <Router className="App">
       <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
@@ -33,7 +34,7 @@ function App() {
           <Services />
         </Route>
         <Route path="/portfolio">
-          <Portfolio />
+          <Portfolio/>
         </Route>
       </Switch>
 
