@@ -5,17 +5,9 @@ import './allprojects.css';
 
 
 
-function AllProjects({ id, handleClose,
-    title,
-    tools,
-    description,
-    url,
-    image,
-    category,
-    repo,
-    clicked,
-    setClicked, }) {
+function AllProjects({ id, handleClose, title,tools,description, url, image,category,repo, clicked,setClicked, }) {
     const [project, setProject] = useState("");
+    const [info, setInfo] = useState(false);
 
     const projectFilters = ["Documaker", "Hermes", "Searchy", "DT", "Stockchasr"];
 
@@ -24,20 +16,24 @@ function AllProjects({ id, handleClose,
         console.log()
         if (id === 1) {
             setProject("DT")
-            setClicked(true)
+            setClicked(1)
         } else if (id === 2) {
             setProject("Searchy")
-            setClicked(true)
+            setClicked(2)
         } else if (id === 3) {
             setProject("Documaker")
-            setClicked(true)
+            setClicked(3)
         } else if (id === 4) {
             setProject("Hermes")
-            setClicked(true)
+            setClicked(4)
         } else {
             setProject("Stockchasr")
-            setClicked(true)
+            setClicked(5)
         }
+    }
+
+    const toggleInfo = () => {
+        setInfo(true);
     }
 
 
@@ -55,31 +51,12 @@ function AllProjects({ id, handleClose,
                     </div>
                     <p className="portfolio-item-title">{title}</p>
                     {/* Portfolio items details start */}
-                    <div className="portfolio-item-details">
-                        <div className="row">
-                            <div className="description">
-                                <h3>Project Brief:</h3>
-                                <p>{description}</p>
-                            </div>
-                            <div className="info">
-                                <h3>Project Info</h3>
-                                <ul>
-                                    <li>Site - <span>{url}</span></li>
-                                    <li>Repo - <span>{repo}</span></li>
-                                    <li>Date - <span>2021</span></li>
-                                    <li>Tools - <span>{tools}</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
 
-            {/* <div className="separator"></div> */}
-
             {project &&  clicked ? 
                 <div className={project && clicked? "blog-popup active" : "blog-popup"}>
-                    <div className={project && clicked ? "pp-details active" : "pp-details"}>
+                    <div className={project && clicked  ? "pp-details active" : "pp-details"}>
                         <div className="pp-details-inner">
                             <div className="pp-title">
                                 <h2>{title}</h2>
