@@ -33,6 +33,7 @@ function AllProjects({ id, handleClose, title,tools,description, url, image,cate
     }
 
     const toggleInfo = () => {
+        console.log('hello')
         setInfo(true);
     }
 
@@ -55,8 +56,8 @@ function AllProjects({ id, handleClose, title,tools,description, url, image,cate
             </div>
 
             {project &&  clicked ? 
-                <div className={project && clicked? "blog-popup active" : "blog-popup"}>
-                    <div className={project && clicked  ? "pp-details active" : "pp-details"}>
+                <div className={project && clicked ? "blog-popup active" : "blog-popup"}>
+                    <div className={project && clicked && info ? "pp-details active" : "pp-details"}>
                         <div className="pp-details-inner">
                             <div className="pp-title">
                                 <h2>{title}</h2>
@@ -83,7 +84,7 @@ function AllProjects({ id, handleClose, title,tools,description, url, image,cate
                     </div>
                     <div className="pp-main">
                         <div className="pp-main-inner">
-                            <div className="pp-project-details-btn outer-shadow hover-in-shadow">Project Details <i className="fas fa-plus"></i></div>
+                            <div className="pp-project-details-btn outer-shadow hover-in-shadow" onClick={toggleInfo}>Project Details <i className="fas fa-plus"></i></div>
                             <div className="pp-close outer-shadow hover-in-shadow" onClick={handleClose}>&times;</div>
                             <img src={image} alt="" className="pp-img outer-shadow" />
                         </div>

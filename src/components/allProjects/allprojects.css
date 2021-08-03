@@ -19,7 +19,6 @@
 .blog-popup.active {
     visibility: visible;
     opacity: 1;
-    display: contents;
 }
 
 
