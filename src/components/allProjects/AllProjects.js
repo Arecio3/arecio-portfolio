@@ -1,5 +1,4 @@
 import { useState } from 'react'
-// import '../../pages/portfolio/portfolio.css';
 import './allprojects.css';
 
 
