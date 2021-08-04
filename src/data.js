@@ -50,10 +50,10 @@ const FullStack = [
         title: "StockChasr",
         tools: "React JS, Canvas JS, Material UI, Express, Passport, Mongoose",
         description: "Search up your favorite stocks and save them to your dashboard.",
-        URL: "https://hermes-nine.vercel.app/",
+        URL: "stockchasr.herokuapp.com",
         image: stockchasr1,
         category: "Full Stack",
-        repo: "stockchasr.herokuapp.com"
+        repo: "https://github.com/adamalcantara/stockchasr"
     }
 ]
 

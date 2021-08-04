@@ -52,7 +52,7 @@ function Portfolio() {
                             <span className={selected === "Full Stack" ? "filterItem outer-shadow active" : "filterItem"} data-target="full-stack" onClick={() => setFull("Full Stack")}>Full Stack</span>
                         </div>
                     </div>
-                    {selected === "All" ? <div>
+                    {selected === "All" || "Full Stack" ? <div>
                         {data.map((project) => (
                             <AllProjects
                                 key={project.id}
@@ -67,23 +67,6 @@ function Portfolio() {
                                 clicked={clicked}
                                 setClicked={setClicked}
                                 handleClose={handleClose}
-
-                            />
-                        ))}
-                    </div> : ''}
-                    {selected === "Full Stack" ? <div>
-                        {data.map((project) => (
-                            <AllProjects
-                                key={project.id}
-                                title={project.title}
-                                tools={project.tools}
-                                description={project.description}
-                                url={project.url}
-                                image={project.image}
-                                category={project.category}
-                                repo={project.repo}
-                                clicked={clicked}
-                                setClicked={setClicked}
 
                             />
                         ))}
