@@ -7,6 +7,7 @@ import About from "./pages/about/About";
 import Services from "./pages/services/Services";
 import Portfolio from "./pages/portfolio/Portfolio";
 import Testimonials from './pages/testimonials/Testimonials';
+import Contact from "./pages/contact/Contact";
 import {
   BrowserRouter as Router,
   Switch,
@@ -37,6 +38,9 @@ function App() {
         </Route>
         <Route path="/testimonials">
           <Testimonials/>
+        </Route>
+        <Route path="/contact">
+          <Contact/>
         </Route>
       </Switch>
 

@@ -14,7 +14,7 @@ function NavMenu({ menuOpen, setMenuOpen }) {
                    <Link to='/services'><li onClick={() => setMenuOpen(false)}className="outer-shadow hover-in-shadow">Services</li></Link>
                    <Link to='/portfolio'><li onClick={() => setMenuOpen(false)}className="outer-shadow hover-in-shadow">Portfolio</li></Link>
                     <Link to='/testimonials'><li onClick={() => setMenuOpen(false)}className="outer-shadow hover-in-shadow">Testimonials</li></Link>
-                    <li className="outer-shadow hover-in-shadow">Contact</li>
+                   <Link to='/contact'><li  onClick={() => setMenuOpen(false)} className="outer-shadow hover-in-shadow">Contact</li></Link>
                 </ul>
             </div>
             {/* Copyright */}
