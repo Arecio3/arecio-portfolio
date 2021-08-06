@@ -2,15 +2,15 @@ import './contact.css';
 
 function Contact() {
     return (
-        <section className="contact-section">
+        <section className="contact">
             <div className="contact-container">
-                <div className="contact-row">
+                <div className="contact-header">
                     <div className="contact-title">
                         <h1>Contact</h1>
                         <h3>Get In Touch</h3>
                     </div>
                 </div>
-                <div className="contact-row">
+                <div className="contact-box">
                     <div className="contact-item">
                         <div className="contact-item-inner outer-shadow">
                             <i className="fa fa-phone"></i>

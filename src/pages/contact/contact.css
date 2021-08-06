@@ -1,11 +1,11 @@
 @import "../../styles/color-1.css";
 
-.contact-section {
+.contact {
     padding: 80px 0 80px;
     min-height: 100vh;
 }
 
-.contact-row .contact-title {
+.contact-header .contact-title {
     text-align: center;
     justify-content: center;
 }
@@ -19,10 +19,42 @@
 .contact-title h3 {
     top: 17%;
 }
+.contact-box {
+    margin-left: 400px;
+    display: flex;
+
+}
 
 .contact-item {
     flex:0 0 33.33%;
-    max-width: 33.33%;
-    padding:0 15px;
+    max-width: 23.33%;
+    padding:15px;
+    margin-top: 55px;
+}
 
+.contact-item-inner {
+    padding: 30px 15px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.contact-item-inner i {
+    font-size: 25px;
+    color: var(--gold-color);
+}
+
+.contact-item-inner span {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-black-700);
+    margin: 15px 0 10px;
+}
+
+.contact-item-inner p {
+    font-size: 16px;
+    color: var(--text-black-600);
+    line-height: 26px;
+    margin: 0;
+    word-break: break-word;
 }
