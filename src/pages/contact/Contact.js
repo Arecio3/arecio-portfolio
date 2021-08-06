@@ -1,6 +1,11 @@
+import { useForm, ValidationError } from '@formspree/react';
 import './contact.css';
 
 function Contact() {
+    const [state, handleSubmit] = useForm("xpzkybjr");
+    // if (state.succeeded) {
+    //     return <p>Thanks for joining!</p>;
+    // }
     return (
         <section className="contact">
             <div className="contact-container">
@@ -31,6 +36,76 @@ function Contact() {
                             <span>Located</span>
                             <p>Tampa, Florida- 33615</p>
                         </div>
+                    </div>
+                    {/* End of Contact Item */}
+                </div>
+                <div className="contact-box">
+                    <div className="contact-form">
+                        <form onSubmit={handleSubmit}>
+                            <div className="contact-box">
+                                <div className="w50">
+                                    <div className="input-group outer-shadow hover-in-shadow">
+
+                                        <input
+                                            placeholder="Email"
+                                            id="email"
+                                            type="email"
+                                            name="email"
+                                            className="input-control"
+                                        />
+                                    </div>
+                                    <div className="input-group outer-shadow hover-in-shadow">
+
+                                        <input
+                                            placeholder="Name"
+                                            id="name"
+                                            type="name"
+                                            name="name"
+                                            className="input-control"
+                                        />
+                                    </div>
+                                    <div className="input-group outer-shadow hover-in-shadow">
+                                        <input
+                                            placeholder="Subject"
+                                            id="subject"
+                                            type="subject"
+                                            name="subject"
+                                            className="input-control"
+                                        />
+                                    </div>
+                                </div>
+                                <ValidationError
+                                    prefix="Email"
+                                    field="email"
+                                    errors={state.errors}
+                                />
+                                <div className="w50">
+                                    <div className="input-group outer-shadow hover-in-shadow">
+                                        <textarea
+                                            placeholder="Message"
+                                            id="message"
+                                            name="message"
+                                            className="input-control"
+                                            color="gold"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                            <ValidationError
+                                prefix="Message"
+                                field="message"
+                                errors={state.errors}
+                            />
+                            <div className="contact-box">
+                                <div className="submit-btn">
+                                   {state.succeeded ? <button type="submit" className="btn-1 outer-shadow hover-in-shadow">
+                                        Message Sent!
+                                    </button> : <button type="submit" className="btn-1 outer-shadow hover-in-shadow" disabled={state.submitting}>
+                                        Send Message
+                                    </button>}
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>

@@ -1,60 +1,112 @@
 @import "../../styles/color-1.css";
 
 .contact {
-    padding: 80px 0 80px;
-    min-height: 100vh;
+  padding: 80px 0 80px;
+  min-height: 100vh;
 }
 
 .contact-header .contact-title {
-    text-align: center;
-    justify-content: center;
+  text-align: center;
+  justify-content: center;
 }
 
 .contact-title h1 {
-    color: var(--gold-color);
-    top: 10%;
-    font-size: 40px;
+  color: var(--gold-color);
+  top: 10%;
+  font-size: 40px;
 }
 
 .contact-title h3 {
-    top: 17%;
+  top: 17%;
 }
 .contact-box {
-    margin-left: 400px;
-    display: flex;
-
+  display: flex;
+  justify-content: center;
 }
 
 .contact-item {
-    flex:0 0 33.33%;
-    max-width: 23.33%;
-    padding:15px;
-    margin-top: 55px;
+  flex: 0 0 33.33%;
+  max-width: 23.33%;
+  padding: 15px;
+  margin-top: 55px;
 }
 
 .contact-item-inner {
-    padding: 30px 15px;
-    text-align: center;
-    border-radius: 5px;
+  padding: 30px 15px;
+  text-align: center;
+  border-radius: 5px;
 }
 
 .contact-item-inner i {
-    font-size: 25px;
-    color: var(--gold-color);
+  font-size: 25px;
+  color: var(--gold-color);
 }
 
 .contact-item-inner span {
-    display: block;
-    font-size: 16px;
-    font-weight: 600;
-    color: var(--text-black-700);
-    margin: 15px 0 10px;
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-black-700);
+  margin: 15px 0 10px;
 }
 
 .contact-item-inner p {
-    font-size: 16px;
-    color: var(--text-black-600);
-    line-height: 26px;
-    margin: 0;
-    word-break: break-word;
+  font-size: 16px;
+  color: var(--text-black-600);
+  line-height: 26px;
+  margin: 0;
+  word-break: break-word;
+}
+
+.contact-form {
+  flex:0 0 100%;
+  max-width: 100%;
+  margin-top: 50px;
+}
+ .w50 {
+  position:relative;   
+  padding:0 15px;
+  flex:0 0 50%;
+  max-width: 35%;
+}
+
+.input-group {
+  margin:0 0 25px;
+  transition: all 0.3s ease;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.input-group .input-control {
+  height: 45px;
+  display: block;
+  width: 100%;
+  border-radius: 30px;
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  padding: 0 15px;
+  color: var(--text-black-700);
+}
+
+.input-group:after {
+  border-radius: 30px;
+}
+
+.input-group textarea.input-control {
+    height: 184px;
+    padding-top: 15px;
+}
+
+.submit-btn {
+    flex:0 0 100%;
+    max-width: 100%;
+    text-align: right;
+    margin-right: 550px;
+    padding-right:0 15px;
+}
+
+.submit-btn button {
+    border: none;
+
 }
