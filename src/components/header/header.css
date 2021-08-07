@@ -124,27 +124,60 @@
 .header .burgerBtn span:after {
     top: 6px;
 }
+
 .header {
     height: 70px;
 }
 
 .toggleTheme {
+    position: absolute;
+    right: 180px;
     cursor: pointer;
     transition:cursor 0.3s ease;
+    border: none;
+    border-radius: 50%;
+}
+.toggleTheme.active {
+    position: absolute;
+    right: 180px;
+    cursor: pointer;
+    transition:cursor 0.3s ease;
+    border: none;
+    border-radius: 50%;
+    transition:cursor 5s ease;
+}
+.toggleTheme:before {
+    position: absolute;
+    right: 350px;
+    cursor: pointer;
+    transition:cursor 0.3s ease;
+    border: none;
+    border-radius: 50%;
+}
+.toggleTheme:after {
+    position: absolute;
+    right: 350px;
+    cursor: pointer;
+    transition:cursor 0.3s ease;
+    border: none;
+    border-radius: 50%;
 }
 
 .toggleTheme button.active {
     background-color: var(--outer-shadow-dm);
-    border-radius: 50%;
+    
+
 }
 .toggleTheme button.active:after { 
     background-color: var(--outer-shadow-dm);
+}
+.sun {
+    padding: 8px;
+    border-radius: 50%;
+
+}
+.moon {
+    padding: 8px;
     border-radius: 50%;
 }
 
-.sun {
-    padding: 5px;
-}
-.moon {
-    padding: 5px;
-}
