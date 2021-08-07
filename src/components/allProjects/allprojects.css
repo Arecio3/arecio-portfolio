@@ -2,20 +2,6 @@
     display: inline-block;
 }
 
-.blog-popup {
-    background-color: var(--bg-black-50);
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1000;
-    overflow-y: auto;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
-}
-
 .blog-popup-active {
     background-color: var(--bg-black-50);
     position: fixed;
@@ -46,9 +32,6 @@
     opacity: 1;
 }
 
-.pp-details-inner {
-    padding: 30px 0;
-}
 
 .pp-title {
     padding: 0 15px;
@@ -97,6 +80,7 @@
     flex: 0 0 35%;
     max-width: 35%;
     padding: 0 15px;
+    padding-bottom: 100px
 }
 
 .pp-info ul li {
@@ -122,10 +106,13 @@
 
 .pp-img  {
   max-width: 100%;
-  width: auto;
-  height: auto;
+  display: inline-block;
+  width: 645px;
+  height: 350px;
+  margin: 15px;
   padding: 10px;
   border-radius: 5px;
+  object-fit: contain;
 }
 
 .pp-img.active {
@@ -143,7 +130,6 @@
 }
 
 .pp-main-inner {
-    padding: 70px 0;
     position: relative;
 }
 
@@ -172,7 +158,7 @@
 
 .pp-close {
     position: absolute;
-    right: 0;
+    right: 25px;
     height: 40px;
     line-height: 38px;
     width: 40px;

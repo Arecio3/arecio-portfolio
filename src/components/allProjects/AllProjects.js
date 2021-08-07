@@ -3,7 +3,7 @@ import './allprojects.css';
 
 
 
-function AllProjects({ id, handleClose, title,tools,description, url, image,category,repo, clicked,setClicked, }) {
+function AllProjects({ id, handleClose, title,tools,description, url, image, image2, image3, image4, image5, image6, image7, category,repo, clicked,setClicked, }) {
     const [project, setProject] = useState("");
     const [info, setInfo] = useState(false);
 
@@ -59,6 +59,7 @@ function AllProjects({ id, handleClose, title,tools,description, url, image,cate
                         <div className="pp-details-inner">
                             <div className="pp-title">
                                 <h2>{title}</h2>
+                                <div className="pp-close outer-shadow hover-in-shadow" onClick={handleClose}>&times;</div>
                                 <p>Category - <span className="pp-project-category">{category}</span></p>
                             </div>
                             <div className="pp-project-details">
@@ -82,9 +83,13 @@ function AllProjects({ id, handleClose, title,tools,description, url, image,cate
                     </div>
                     <div className="pp-main">
                         <div className="pp-main-inner">
-                            <div className="pp-project-details-btn outer-shadow hover-in-shadow" onClick={toggleInfo}>Project Details <i className="fas fa-plus"></i></div>
-                            <div className="pp-close outer-shadow hover-in-shadow" onClick={handleClose}>&times;</div>
                             <img src={image} alt="" className="pp-img outer-shadow" />
+                            <img src={image2} alt="" className="pp-img outer-shadow" />
+                            <img src={image3} alt="" className="pp-img outer-shadow" />
+                           {image4 ? <img src={image4} alt="" className="pp-img outer-shadow" /> : ""}
+                            {image5 ? <img src={image5} alt="" className="pp-img outer-shadow" /> : ""}
+                            {image6 ? <img src={image6} alt="" className="pp-img outer-shadow" /> : ""}
+                            {image7 ? <img src={image7} alt="" className="pp-img outer-shadow" /> : ""}
                         </div>
                     </div>
                 </div> : ""}

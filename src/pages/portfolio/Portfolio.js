@@ -67,7 +67,12 @@ function Portfolio() {
                                 clicked={clicked}
                                 setClicked={setClicked}
                                 handleClose={handleClose}
-
+                                image2={project.image2}
+                                image3={project.image3}
+                                image4={project.image4}
+                                image5={project.image5}
+                                image6={project.image6}
+                                image7={project.image7}
                             />
                         ))}
                     </div> : ''}
