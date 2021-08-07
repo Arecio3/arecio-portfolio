@@ -34,15 +34,20 @@ function App() {
     fontColor: "#fff",
   };
 
+  const themes = {
+    light: lightTheme,
+    dark: darkTheme,
+  }
+
   return (
-    <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
+    <ThemeProvider theme={themes[theme]}>
       <Router className="App">
-      <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} theme={theme} setTheme={setTheme}/>
       <NavMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} active={active} setActive={setActive}/>
 
       <Switch>
         <Route exact path="/">
-          <Home />
+          <Home theme={theme} setTheme={setTheme}/>
         </Route>
         <Route  path="/about">
           <About />

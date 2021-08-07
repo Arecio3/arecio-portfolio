@@ -74,10 +74,6 @@
     border-radius: 30px;
 }
 
-.inner-shadow {
-    box-shadow: var( --inner-shadow);
-}
-
 .nav-menu ul li.active {
     color: var(--gold-color);
 }

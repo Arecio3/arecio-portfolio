@@ -90,6 +90,13 @@
     background-color: var(--bg-black);
     position: relative;
 }
+.header .burgerBtn.active span {
+    display: block;
+    height: 2px;
+    width: 16px;
+    background-color: var(--gold-color);
+    position: relative;
+}
 
 .header .burgerBtn span:before,
 .header .burgerBtn span:after {
@@ -100,6 +107,16 @@
     height: 100%;
     background-color: var(--bg-black);
 }
+.header .burgerBtn.active span:before,
+.header .burgerBtn.active span:after
+ {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--gold-color);
+}
 
 .header .burgerBtn span:before {
     top: -6px;
@@ -109,4 +126,25 @@
 }
 .header {
     height: 70px;
+}
+
+.toggleTheme {
+    cursor: pointer;
+    transition:cursor 0.3s ease;
+}
+
+.toggleTheme button.active {
+    background-color: var(--outer-shadow-dm);
+    border-radius: 50%;
+}
+.toggleTheme button.active:after { 
+    background-color: var(--outer-shadow-dm);
+    border-radius: 50%;
+}
+
+.sun {
+    padding: 5px;
+}
+.moon {
+    padding: 5px;
 }

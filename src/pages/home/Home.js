@@ -2,11 +2,11 @@ import './home.css';
 import selfie from "../../images/selfie.png";
 import { Link } from "react-router-dom";
 
-function Home() {
+function Home({theme, setTheme}) {
     return (
-        <section className="home-section section">
+        <section className={theme === "dark" ? "home-section active" : "home-section section"}>
             {/* Effect wrap start */}
-            <div className="effect-wrap">
+            <div className={theme === "dark" ? "effect-wrap active" : "effect-wrap"}>
                 <div className="effect effect-1"></div>
                 <div className="effect effect-2">
                     <div></div>
@@ -56,15 +56,15 @@ function Home() {
             {/* Effect wrap end */}
             <div className="container">
                 <div className="row full-screen align-items-center">
-                    <div className="home-text">
+                    <div className={theme === "dark" ? "home-text active" : "home-text"}>
                         <p>Hello</p>
-                        <h2>I'm Arecio Canton</h2>
+                        <h2>I'm <span>Arecio</span> Canton</h2>
                         <h1>Full Stack Developer & Web Designer</h1>
-                        <Link to='/about'><a className="btn-1 outer-shadow hover-in-shadow">About Me</a></Link>
+                        <Link to='/about'><a className={ theme === "dark" ? "btn-1 outer-shadow-dm hover-in-shadow-dm active" : "btn-1 outer-shadow hover-in-shadow"}>About Me</a></Link>
                     </div>
                     <div className="home-img">
-                        <div className="imgBox inner-shadow">
-                            <img src={selfie} alt="" className="selfie outer-shadow" />
+                        <div className={theme === "dark" ? "imgBox inner-shadow-dm active" : "imgBox inner-shadow"}>
+                            <img src={selfie} alt="" className={theme === "dark" ? "selfie outer-shadow-dm": "selfie outer-shadow"} />
                         </div>
                     </div>
                 </div>

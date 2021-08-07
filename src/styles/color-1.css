@@ -43,3 +43,7 @@
 .hover-in-shadow:after {
     box-shadow: var(--inner-shadow);
 }
+
+.inner-shadow {
+    box-shadow: var( --inner-shadow);
+}
