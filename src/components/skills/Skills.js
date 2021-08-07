@@ -1,5 +1,6 @@
-import './skills.css'
-
+import './skills.css';
+import { SiJavascript, SiCss3} from "react-icons/si";
+import {  DiReact, DiSass, DiMysql, DiGithubBadge, DiNodejs, DiBootstrap, DiMongodb, DiHtml5 } from "react-icons/di";
 function Skills({ active }) {
     return (
         <>
@@ -8,115 +9,57 @@ function Skills({ active }) {
           <div className="skills tab-content">
               <div className="row">
                   {/* skill item start */}
-                  <div className="skillItem">
-                      <p>HTML</p>
-                      <div className="progress inner-shadow">
-                          <div className="progress-bar" style={{width: `calc(90% - 14px)`}}>
-                              <span>90%</span>
-                          </div>
-                      </div>
+                  <div className="skillItem outer-shadow hover-in-shadow">
+                      <DiHtml5 color="red"/>
                   </div>
                   {/* Skill item end */}
                   {/* skill item start */}
-                  <div className="skillItem">
-                      <p>JavaScript</p>
-                      <div className="progress inner-shadow">
-                          <div className="progress-bar" style={{width: `calc(70% - 14px)`}}>
-                              <span>70%</span>
-                          </div>
-                      </div>
+                  <div className="skillItem outer-shadow hover-in-shadow">
+                  <SiCss3 color="#264de4"/>
                   </div>
                   {/* Skill item end */}
                   {/* skill item start */}
-                  <div className="skillItem">
-                      <p>CSS</p>
-                      <div className="progress inner-shadow">
-                          <div className="progress-bar" style={{width: `calc(70% - 14px)`}}>
-                              <span>70%</span>
-                          </div>
-                      </div>
+                  <div className="skillItem outer-shadow hover-in-shadow">
+                  <SiJavascript color="#F8DD3C"/>
                   </div>
                   {/* Skill item end */}
                   {/* skill item start */}
-                  <div className="skillItem">
-                      <p>React JS</p>
-                      <div className="progress inner-shadow">
-                          <div className="progress-bar" style={{width: `calc(55% - 14px)`}}>
-                              <span>55%</span>
-                          </div>
-                      </div>
+                  <div className="skillItem outer-shadow hover-in-shadow">
+                  <DiReact color="61DAFB"/>
                   </div>
                   {/* Skill item end */}
                   {/* skill item start */}
-                  <div className="skillItem">
-                      <p>Next JS</p>
-                      <div className="progress inner-shadow">
-                          <div className="progress-bar" style={{width: `calc(45% - 14px)`}}>
-                              <span>45%</span>
-                          </div>
-                      </div>
+                  <div className="skillItem outer-shadow hover-in-shadow">
+                  <img className="next-icon" src="https://cdn.worldvectorlogo.com/logos/next-js.svg" alt="" />
                   </div>
                   {/* Skill item end */}
                   {/* skill item start */}
-                  <div className="skillItem">
-                      <p>Node JS</p>
-                      <div className="progress inner-shadow">
-                          <div className="progress-bar" style={{width: `calc(65% - 14px)`}}>
-                              <span>65%</span>
-                          </div>
-                      </div>
+                  <div className="skillItem outer-shadow hover-in-shadow">
+                  <DiNodejs color="#68A063" />
                   </div>
                   {/* Skill item end */}
                   {/* skill item start */}
-                  <div className="skillItem">
-                      <p>Sass</p>
-                      <div className="progress inner-shadow">
-                          <div className="progress-bar" style={{width: `calc(25% - 14px)`}}>
-                              <span>25%</span>
-                          </div>
-                      </div>
+                  <div className="skillItem outer-shadow hover-in-shadow">
+                      <DiSass color="#cc6699" />
                   </div>
                   {/* Skill item end */}
                   {/* skill item start */}
-                  <div className="skillItem">
-                      <p>Bootstrap</p>
-                      <div className="progress inner-shadow">
-                          <div className="progress-bar" style={{width: `calc(50% - 14px)`}}>
-                              <span>50%</span>
-                          </div>
-                      </div>
+                  <div className="skillItem outer-shadow hover-in-shadow">
+                  <DiBootstrap color="#553c7B"/>
                   </div>
                   {/* Skill item end */}
-                  {/* skill item start */}
-                  <div className="skillItem">
-                      <p>Tailwind</p>
-                      <div className="progress inner-shadow">
-                          <div className="progress-bar" style={{width: `calc(20% - 14px)`}}>
-                              <span>20%</span>
-                          </div>
-                      </div>
+                  <div className="skillItem outer-shadow hover-in-shadow">
+                      <img className="tw-icon" src="https://icons-for-free.com/iconfiles/png/512/Tailwind-1324888767228371881.png" alt="" />
                   </div>
-                  {/* Skill item end */}
-                  {/* skill item start */}
-                  <div className="skillItem">
-                      <p>mySQL</p>
-                      <div className="progress inner-shadow">
-                          <div className="progress-bar" style={{width: `calc(55% - 14px)`}}>
-                              <span>55%</span>
-                          </div>
-                      </div>
+                  <div className="skillItem outer-shadow hover-in-shadow">
+                  <DiMysql color="#00759f" />
                   </div>
-                  {/* Skill item end */}
-                  {/* skill item start */}
-                  <div className="skillItem">
-                      <p>noSQL</p>
-                      <div className="progress inner-shadow">
-                          <div className="progress-bar" style={{width: `calc(80% - 14px)`}}>
-                              <span>80%</span>
-                          </div>
-                      </div>
+                  <div className="skillItem outer-shadow hover-in-shadow">
+                      <DiMongodb color="#4DB33D" />
                   </div>
-                  {/* Skill item end */}
+                  <div className="skillItem outer-shadow hover-in-shadow">
+                      <DiGithubBadge color="#4078c0" />
+                  </div>
               </div>
           </div>
       </div>

@@ -1,14 +1,36 @@
-.skills {
+.next-icon {
+    width: 200px;
+    height: 200px;
+}
+.tw-icon {
+    width: 200px;
+    height: 200px;
+}
+
+.skillItem {
+    font-size: 200px;
+    border-radius: 5%;
+    padding: 25px;
+    margin: auto;
+    margin-top: 25px;
+    transition: all 0.3s ease;
+}
+
+.skillItem:after{
+    border-radius: 5%;
+}
+/* .skills {
     padding: 0 0 40px;
 }
 
 .skills .skillItem {
+    display: flex;
     flex:0 0 50%;
     max-width: 50%;
     padding: 0 15px;
     margin-bottom: 40px;
-}
-
+} */
+/* 
 .tab-content {
     flex: 0 0 100%;
     max-width: 100%;
@@ -18,9 +40,9 @@
     flex: 0 0 50%;
     max-width: 50%;
     padding: 0 15px;
-}
+} */
 
-.skills .skillItem p {
+/* .skills .skillItem p {
     font-size: 16px;
     color: var(--text-black-600);
     text-transform: capitalize;
@@ -50,4 +72,4 @@
     font-weight: 500;
     color: var(--text-black-300);
     margin-top: -40px;
-}
+} */

@@ -17,11 +17,13 @@ import {
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [active, setActive] = useState("home");
+
 
   return (
     <Router className="App">
       <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      <NavMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <NavMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} active={active} setActive={setActive}/>
 
       <Switch>
         <Route exact path="/">
