@@ -8,6 +8,7 @@ import Services from "./pages/services/Services";
 import Portfolio from "./pages/portfolio/Portfolio";
 import Testimonials from './pages/testimonials/Testimonials';
 import Contact from "./pages/contact/Contact";
+import { ThemeProvider } from "styled-components";
 import {
   BrowserRouter as Router,
   Switch,
@@ -18,10 +19,24 @@ import {
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [active, setActive] = useState("home");
+  const [theme, setTheme] = useState("light");
 
+  const themeToggler = () => {
+    theme === "light" ? setTheme("dark") : setTheme("light");
+  }
+
+  const lightTheme = {
+    body: "#eff0f4",
+    fontColor: "#fff",
+  };
+  const darkTheme = {
+    body: "#000000",
+    fontColor: "#fff",
+  };
 
   return (
-    <Router className="App">
+    <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
+      <Router className="App">
       <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <NavMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} active={active} setActive={setActive}/>
 
@@ -47,6 +62,7 @@ function App() {
       </Switch>
 
     </Router>
+    </ThemeProvider>
   );
 }
 
