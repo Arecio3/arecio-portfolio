@@ -43,7 +43,7 @@ function App() {
     <ThemeProvider theme={themes[theme]}>
       <Router className="App">
       <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} theme={theme} setTheme={setTheme}/>
-      <NavMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} active={active} setActive={setActive}/>
+      <NavMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} active={active} setActive={setActive} theme={theme} setTheme={setTheme}/>
 
       <Switch>
         <Route exact path="/">
