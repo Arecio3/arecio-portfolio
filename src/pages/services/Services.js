@@ -1,19 +1,19 @@
 import "./services.css";
 
-function Services() {
+function Services({ theme, setTheme}) {
     return (
-        <section className="service-section section" id="services">
+        <section className={theme === "dark" ? "service-section active" :"service-section section"} id="services">
             <div className="container">
                 <div className="row">
-                    <div className="sectionTitle">
+                    <div className={theme === "dark" ? "sectionTitle active" : "sectionTitle"}>
                         <h2 data-heading="Services">What I do</h2>
                     </div>
                 </div>
                 <div className="row">
                     {/* Service item start */}
                     <div className="service-item">
-                        <div className="service-item-inner outer-shadow">
-                            <div className="icon inner-shadow">
+                        <div className={theme === "dark" ? "service-item-inner outer-shadow-dm active" : "service-item-inner outer-shadow"}>
+                            <div className={theme === "dark" ? "icon inner-shadow-dm active" : "icon inner-shadow"}>
                                 <i className="fas fa-mobile-alt"></i>
                             </div>
                             <h3>Responsive Design</h3>
@@ -23,8 +23,8 @@ function Services() {
                     {/* Service item end */}
                     {/* Service item start */}
                     <div className="service-item">
-                        <div className="service-item-inner outer-shadow">
-                            <div className="icon inner-shadow">
+                        <div className={theme === "dark" ? "service-item-inner outer-shadow-dm active" : "service-item-inner outer-shadow"}>
+                            <div className={theme === "dark" ? "icon inner-shadow-dm active" : "icon inner-shadow"}>
                             <i className="fas fa-laptop-code"></i>
                             </div>
                             <h3>Web Design</h3>
@@ -34,8 +34,8 @@ function Services() {
                     {/* Service item end */}
                     {/* Service item start */}
                     <div className="service-item">
-                        <div className="service-item-inner outer-shadow">
-                            <div className="icon inner-shadow">
+                        <div className={theme === "dark" ? "service-item-inner outer-shadow-dm active" : "service-item-inner outer-shadow"}>
+                            <div className={theme === "dark" ? "icon inner-shadow-dm active" : "icon inner-shadow"}>
                                 <i className="fas fa-server"></i>
                             </div>
                             <h3>Backend Development</h3>
@@ -45,8 +45,8 @@ function Services() {
                     {/* Service item end */}
                     {/* Service item start */}
                     <div className="service-item">
-                        <div className="service-item-inner outer-shadow">
-                            <div className="icon inner-shadow">
+                        <div className={theme === "dark" ? "service-item-inner outer-shadow-dm active" : "service-item-inner outer-shadow"}>
+                            <div className={theme === "dark" ? "icon inner-shadow-dm active" : "icon inner-shadow"}>
                             <i className="fas fa-brain"></i>
                             </div>
                             <h3>Bi-lingual</h3>
@@ -56,8 +56,8 @@ function Services() {
                     {/* Service item end */}
                     {/* Service item start */}
                     <div className="service-item">
-                        <div className="service-item-inner outer-shadow">
-                            <div className="icon inner-shadow">
+                        <div className={theme === "dark" ? "service-item-inner outer-shadow-dm active" : "service-item-inner outer-shadow"}>
+                            <div className={theme === "dark" ? "icon inner-shadow-dm active" : "icon inner-shadow"}>
                             <i className="fas fa-database"></i>
                             </div>
                             <h3>Data Management</h3>
@@ -67,8 +67,8 @@ function Services() {
                     {/* Service item end */}
                     {/* Service item start */}
                     <div className="service-item">
-                        <div className="service-item-inner outer-shadow">
-                            <div className="icon inner-shadow">
+                        <div className={theme === "dark" ? "service-item-inner outer-shadow-dm active" : "service-item-inner outer-shadow"}>
+                            <div className={theme === "dark" ? "icon inner-shadow-dm active" : "icon inner-shadow"}>
                                 <i className="fas fa-code"></i>
                             </div>
                             <h3>Clean Code</h3>

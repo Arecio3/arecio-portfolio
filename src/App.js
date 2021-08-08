@@ -53,7 +53,7 @@ function App() {
           <About theme={theme} setTheme={setTheme}/>
         </Route>
         <Route path="/services">
-          <Services />
+          <Services theme={theme} setTheme={setTheme}/>
         </Route>
         <Route path="/portfolio">
           <Portfolio/>
