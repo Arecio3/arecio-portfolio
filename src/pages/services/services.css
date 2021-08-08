@@ -88,3 +88,16 @@
     margin: 0;
     line-height: 26px;
 }
+
+@media(max-width: 991px) {
+    .service-section .service-item {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+@media(max-width: 768px) {
+    .service-section .service-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
