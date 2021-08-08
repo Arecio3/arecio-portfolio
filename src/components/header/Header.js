@@ -1,7 +1,4 @@
 import './header.css';
-import { useState } from "react";
-import NavMenu from "../navMenu/NavMenu";
-import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { CgSun } from 'react-icons/cg'
 import { HiMoon } from 'react-icons/hi'

@@ -162,3 +162,52 @@
         transform: translateY(0px);
     }
 }
+
+@media(max-width: 768px) {
+    .about-section .skills .skill-item,
+    .about-section .aboutInfo,
+    .about-section .aboutImg {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .about-section .aboutImg {
+       padding-bottom: 30px; 
+    }
+
+    .about-section .timeline .timeline-item:nth-child(odd) {
+        padding-right: 15px;
+        text-align: left;
+        padding-left: 75px;
+    }
+
+    .about-section .timeline .timeline-item:nth-child(even) {
+        padding-left: 75px;
+    }
+
+    .about-section .timeline:before {
+        left: 35px;
+    }
+
+    .about-section .timeline .timeline-item:nth-child(odd) .gradIcon {
+        right: auto;
+        left: -60px;
+    }
+    .about-section .timeline .timeline-item:nth-child(even) .gradIcon {
+        left: -60px;
+    }
+
+    .timeline-item {
+        margin-bottom: 40px;
+    }
+
+    .timeline-item:last-child {
+        margin-bottom: 0;
+    }
+
+    .about-section .timeline .timeline-item:nth-child(odd) .timeline-item-inner:before {
+        left: -30px;
+        right: auto;
+    }
+
+}

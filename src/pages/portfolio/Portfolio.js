@@ -30,6 +30,7 @@ function Portfolio({ theme, setTheme}) {
                 break;
             case "FullStack":
                 setData(FullStack);
+                break;
             default:
                 setData(FullStack);
                 break;

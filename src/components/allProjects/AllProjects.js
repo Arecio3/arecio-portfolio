@@ -5,7 +5,6 @@ import './allprojects.css';
 
 function AllProjects({ id, handleClose, title,tools,description, url, image, image2, image3, image4, image5, image6, image7, category,repo, clicked,setClicked, theme}) {
     const [project, setProject] = useState("");
-    const [info, setInfo] = useState(false);
 
     const projectFilters = ["Documaker", "Hermes", "Searchy", "DT", "Stockchasr"];
 
@@ -13,26 +12,21 @@ function AllProjects({ id, handleClose, title,tools,description, url, image, ima
         //  this.setState({ clicked: this.state.clicked})
         console.log()
         if (id === 1) {
-            setProject("DT")
+            setProject(projectFilters[3])
             setClicked(1)
         } else if (id === 2) {
-            setProject("Searchy")
+            setProject(projectFilters[2])
             setClicked(2)
         } else if (id === 3) {
-            setProject("Documaker")
+            setProject(projectFilters[0])
             setClicked(3)
         } else if (id === 4) {
-            setProject("Hermes")
+            setProject(projectFilters[1])
             setClicked(4)
         } else {
-            setProject("Stockchasr")
+            setProject(projectFilters[4])
             setClicked(5)
         }
-    }
-
-    const toggleInfo = () => {
-        console.log('hello')
-        setInfo(true);
     }
 
 

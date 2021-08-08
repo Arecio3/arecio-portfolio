@@ -21,9 +21,6 @@ function App() {
   const [active, setActive] = useState("home");
   const [theme, setTheme] = useState("dark");
 
-  const themeToggler = () => {
-    theme === "light" ? setTheme("dark") : setTheme("light");
-  }
 
   const lightTheme = {
     body: "#eff0f4",

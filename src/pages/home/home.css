@@ -211,9 +211,9 @@
     }
 }
 
-@media (max-width: 768px) {
+@media(max-width: 768px) {
     .home-section .home-text, 
-    .home-img{
+    .home-section .home-img{
         flex:0 0 100%;
         max-width: 100%;;
     }
@@ -228,9 +228,9 @@
     .home-img .imgBox {
         position: absolute;
         top: 125px;
-        right: 180px;
-        max-width: 400px;
-        width: 410px;
+        right: 160px;
+        max-width: 500px;
+        width: 490px;
     }
     .effect-3 {
         margin-left: -60px;
@@ -245,8 +245,12 @@
     }
 }
 
-@media (max-width: 574px) {
-    .home-section .home-img .img-box {
-        max-width: 260px;
+@media(max-width: 575px) {
+    .home-section .home-img .imgBox {
+        max-width: 380px;
+        right: 100px;
+    }
+    .home-text {
+        font-size: 40px;
     }
 }
