@@ -20,6 +20,28 @@
 .skillItem:after{
     border-radius: 5%;
 }
+
+@media (max-width: 428px) {
+    .skillItem {
+        text-align: center;
+    }
+    /* .skillItem:after {
+        border-radius: 50%;
+    }
+     .skillItem {
+         font-size: 100px;
+         border-radius: 50%;
+         text-align: center;
+         height: 200px;
+         width: 50px;
+        }
+        
+        .next-icon,
+        .tw-icon {
+         width: 50%;
+         height: 50%; 
+     } */
+}
 /* .skills {
     padding: 0 0 40px;
 }

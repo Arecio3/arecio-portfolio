@@ -122,3 +122,23 @@
     color: var(--text-black-600);
     font-weight: bold;
 }
+
+@media(max-width: 991px) {
+    .portfolio-section .portfolio-items {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+@media(orientation: landscape) {
+    .portfolio-section {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 428px) {
+    .portfolio-section .portfolio-items {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}

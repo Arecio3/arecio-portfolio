@@ -196,3 +196,41 @@
 .pp-close:hover {
     color: crimson;
 }
+
+@media(max-width: 991px) {
+    .portfolio-item {
+        flex: 0 0 50%;
+        max-width: 50%;
+        justify-content: space-between;
+    }
+}
+@media(max-width: 768px) {
+    .blog-popup-active .pp-description,
+    .blog-popup-active .pp-info,
+    .portfolio-items .portfolio-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+@media(orientation: landscape) {
+    .portfolio-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+        width: 450px;
+    }
+}
+@media(max-width: 428px) {
+    .blog-popup-active .pp-description,
+    .portfolio-items .portfolio-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 55px;
+    }
+
+    .portfolio-item .portfolio-item-inner {
+        margin:20px 20px;
+    }
+    .pp-main .pp-main-inner {
+        right: 15px;
+    }
+}
