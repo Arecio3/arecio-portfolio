@@ -140,6 +140,10 @@
     color: var(--gold-color);
 }
 
+.tab-item {
+    color: var(--text-black-600);
+}
+
 .about-section .tab-content {
     flex:0 0 100%;
     max-width: 100%;

@@ -27,23 +27,23 @@ function About({ theme, setTheme }) {
                         </div>
 
                         <div className="socialLinks">
-                            <a className="outer-shadow hover-in-shadow" href="https://www.facebook.com/arecio.canton.1" target="_blank" rel="noreferrer noopener">
+                            <a className={theme === "dark" ? "outer-shadow-dm hover-in-shadow-dm" : "outer-shadow hover-in-shadow"} href="https://www.facebook.com/arecio.canton.1" target="_blank" rel="noreferrer noopener">
                                 <i className="fab fa-facebook-square" id="facebookIcon"></i>
                             </a>
-                            <a className="outer-shadow hover-in-shadow" href="https://twitter.com/Papichulo813" target="_blank" rel="noreferrer noopener">
+                            <a className={theme === "dark" ? "outer-shadow-dm hover-in-shadow-dm" : "outer-shadow hover-in-shadow"} href="https://twitter.com/Papichulo813" target="_blank" rel="noreferrer noopener">
                                 <i className="fab fa-twitter-square" id="twitterIcon"></i>
                             </a>
-                            <a className="outer-shadow hover-in-shadow" href="https://www.instagram.com/areciooo/" target="_blank" rel="noreferrer noopener">
+                            <a className={theme === "dark" ? "outer-shadow-dm hover-in-shadow-dm" : "outer-shadow hover-in-shadow"} href="https://www.instagram.com/areciooo/" target="_blank" rel="noreferrer noopener">
                                 <i className="fab fa-instagram-square" id="instagramIcon"></i>
                             </a>
-                            <a className="outer-shadow hover-in-shadow" href="https://www.pinterest.com/areciocanton/_saved/" target="_blank" rel="noreferrer noopener">
+                            <a className={theme === "dark" ? "outer-shadow-dm hover-in-shadow-dm" : "outer-shadow hover-in-shadow"} href="https://www.pinterest.com/areciocanton/_saved/" target="_blank" rel="noreferrer noopener">
                                 <i className="fab fa-pinterest-square" id="pintrestIcon" ></i>
                             </a>
-                            <a className="outer-shadow hover-in-shadow" href="https://www.linkedin.com/in/arecio-canton-95026a208/" target="_blank"
+                            <a className={theme === "dark" ? "outer-shadow-dm hover-in-shadow-dm" : "outer-shadow hover-in-shadow"} href="https://www.linkedin.com/in/arecio-canton-95026a208/" target="_blank"
                                 rel="noreferrer noopener">
                                 <i className="fab fa-linkedin" id="linkedIn"></i>
                             </a>
-                            <a className="outer-shadow hover-in-shadow" href="https://github.com/Arecio3" target="_blank" rel="noreferrer noopener">
+                            <a className={theme === "dark" ? "outer-shadow-dm hover-in-shadow-dm" : "outer-shadow hover-in-shadow"} href="https://github.com/Arecio3" target="_blank" rel="noreferrer noopener">
                                 <i className="fab fa-github-square" id="github"></i>
                             </a>
                         </div>
@@ -57,13 +57,13 @@ function About({ theme, setTheme }) {
                 {/* About tabs start */}
                 <div className="row">
                     <div className="aboutTabs">
-                        <span className={selected === 1 ? "tab-item outer-shadow active" : "tab-item"} data-target=".skills" onClick={() => setActive(1)}>Skills</span>
-                        <span className={selected === 2 ? "tab-item outer-shadow active" : "tab-item"} data-target=".education" onClick={() => setActive(2)}>Education</span>
+                    {selected === 1 ? <span className= {theme === "dark" ? "tab-item outer-shadow-dm active" : "tab-item outer-shadow active"} data-target=".skills" onClick={() => setActive(1)}>Skills</span> : <span className= "tab-item" onClick={() => setActive(1)}>Skills</span>}
+                    {selected === 2 ? <span className={theme === "dark" ? "tab-item outer-shadow-dm active" : "tab-item outer-shadow active"} data-target=".education" onClick={() => setActive(2)}>Education</span> : <span className= "tab-item" onClick={() => setActive(2)}>Education</span>}
                     </div>
                 </div>
                 {/* About tabs end */}
                 {selected === 1 ? <Skills theme={theme} setTheme={setTheme}/> :
-                 <Education />}
+                 <Education theme={theme} setTheme={setTheme}/>}
             </div>
         </section>
     )
