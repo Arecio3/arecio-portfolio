@@ -63,7 +63,7 @@ function Home({theme, setTheme}) {
                         <Link to='/about'><a className={ theme === "dark" ? "btn-1 outer-shadow-dm hover-in-shadow-dm active" : "btn-1 outer-shadow hover-in-shadow"}>About Me</a></Link>
                     </div>
                     <div className="home-img">
-                        <div className={theme === "dark" ? "imgBox inner-shadow-dm active" : "imgBox inner-shadow"}>
+                        <div className={theme === "dark" ? "imgBox inner-shadow-dm" : "imgBox inner-shadow"}>
                             <img src={selfie} alt="" className={theme === "dark" ? "selfie outer-shadow-dm": "selfie outer-shadow"} />
                         </div>
                     </div>

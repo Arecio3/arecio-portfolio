@@ -1,8 +1,12 @@
 @import "../../styles/color-1.css";
+@import "../../styles/colors-2.css";
 
 .about-section {
     padding: 80px 0;
     min-height: 100vh;
+}
+.about-section.active {
+    background-color: var(--black-50-dm);
 }
 
 .sectionTitle {

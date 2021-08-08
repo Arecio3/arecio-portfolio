@@ -82,13 +82,6 @@
     border-radius: 50%;
     border: 10px solid transparent;
 }
-.home-section .home-img .imgBox img.active{
-    padding: 15px;
-    width: 100%;
-    height: 450px;
-    border-radius: 50%;
-    border: 10px solid transparent;
-}
 
 .btn-1 {
     padding: 10px 15px;

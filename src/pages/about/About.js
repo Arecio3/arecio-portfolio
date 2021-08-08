@@ -5,7 +5,7 @@ import Education from "../../components/education/Education";
 import Skills from '../../components/skills/Skills';
 import { Link } from 'react-router-dom';
 
-function About() {
+function About({ theme, setTheme }) {
     const [selected, setSelected] = useState(1);
 
     const setActive = (index) => {
@@ -13,7 +13,7 @@ function About() {
     }
 
     return (
-        <section className="about-section section" id="about">
+        <section className={ theme === "dark" ? "about-section active" :"about-section section"} id="about">
             <div className="container">
                 <div className="row">
                     <div className="sectionTitle">
@@ -22,8 +22,8 @@ function About() {
                 </div>
                 <div className="row">
                     <div className="aboutImg">
-                        <div className="imgBox inner-shadow">
-                            <img src={Me} alt="profile pic" className="outer-shadow" />
+                        <div className={ theme === "dark" ? "imgBox inner-shadow-dm active" : "imgBox inner-shadow"}>
+                            <img src={Me} alt="profile pic" className={theme === "dark" ? "outer-shadow-dm" :"outer-shadow"} />
                         </div>
 
                         <div className="socialLinks">
@@ -50,8 +50,8 @@ function About() {
                     </div>
                     <div className="aboutInfo">
                         <p><span>Welcome! My name is Arecio Canton, I am a Full Stack Developer and Web Designer.</span> Just graduated from UCF's 3 Month Full Stack Bootcamp and fell in love with programming so much so that I have completed numerous projects, and plan on continuing. I was born in cuba so si hablo español, I am 21 years old and eager to keep learning and my dream is to eventually get to be able to work with AI and AGI.</p>
-                        <a href="https://docdro.id/zHKZIS4" className="btn-1 outer-shadow hover-in-shadow" target="_blank" rel="noreferrer noopener">Resume</a>
-                        <Link to='/contact'><span className="btn-1 outer-shadow hover-in-shadow" target="_blank" rel="noreferrer noopener">Hire Me</span></Link>
+                        <a href="https://docdro.id/zHKZIS4" className={theme === "dark" ? "btn-1 outer-shadow-dm hover-in-shadow-dm" : "btn-1 outer-shadow hover-in-shadow"} target="_blank" rel="noreferrer noopener">Resume</a>
+                        <Link to='/contact'><span className={theme === "dark" ? "btn-1 outer-shadow-dm hover-in-shadow-dm" : "btn-1 outer-shadow hover-in-shadow"} target="_blank" rel="noreferrer noopener">Hire Me</span></Link>
                     </div>
                 </div>
                 {/* About tabs start */}

@@ -50,7 +50,7 @@ function App() {
           <Home theme={theme} setTheme={setTheme}/>
         </Route>
         <Route  path="/about">
-          <About />
+          <About theme={theme} setTheme={setTheme}/>
         </Route>
         <Route path="/services">
           <Services />
