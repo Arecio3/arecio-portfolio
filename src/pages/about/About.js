@@ -62,7 +62,7 @@ function About({ theme, setTheme }) {
                     </div>
                 </div>
                 {/* About tabs end */}
-                {selected === 1 ? <Skills /> :
+                {selected === 1 ? <Skills theme={theme} setTheme={setTheme}/> :
                  <Education />}
             </div>
         </section>
