@@ -1,3 +1,6 @@
+@import url('../../styles/color-1.css');
+@import url('../../styles/colors-2.css');
+
 .portfolio-items .portfolio-item {
     display: inline-block;
 }
@@ -54,6 +57,22 @@
 
 .pp-title p span {
     font-weight: 400;
+}
+.pp-title.active p {
+    color: var(--text-black-dm);
+    border-bottom:1px solid var(--navy-color);
+}
+.pp-title.active h2 {
+    color: var(--gold-color);
+}
+.pp-project-details.active span {
+    color: var(--navy-color);
+}
+.pp-project-details.active h3 {
+    color: var(--text-black-dm);
+}
+.pp-project-details.active p {
+    color: var(--text-black-dm);
 }
 
 .pp-project-details h3 {

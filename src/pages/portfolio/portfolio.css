@@ -1,4 +1,5 @@
 @import '../../styles/color-1.css';
+@import '../../styles/colors-2.css';
 @import '../about/about.css';
 
 .portfolio-items {
@@ -10,6 +11,14 @@
 .portfolio-section {
     padding: 80px 0 80px;
     min-height: 100vh;
+}
+
+.blog-popup-active.active {
+    background-color: var(--black-50-dm);
+}
+
+.portfolio-section.active {
+    background-color: var(--black-50-dm);
 }
 
 .sectionTitle {
@@ -100,6 +109,10 @@
     background-color: var(--bg-black-100);
     padding: 5px;
     border-radius: 5px;
+}
+
+.view-project.active:hover {
+    background-color: var(--navy-color);
 }
 
 .portfolio-item-inner > p {

@@ -3,7 +3,7 @@ import './allprojects.css';
 
 
 
-function AllProjects({ id, handleClose, title,tools,description, url, image, image2, image3, image4, image5, image6, image7, category,repo, clicked,setClicked, }) {
+function AllProjects({ id, handleClose, title,tools,description, url, image, image2, image3, image4, image5, image6, image7, category,repo, clicked,setClicked, theme}) {
     const [project, setProject] = useState("");
     const [info, setInfo] = useState(false);
 
@@ -40,12 +40,12 @@ function AllProjects({ id, handleClose, title,tools,description, url, image, ima
         <div className="row portfolio-items">
             {/* portfolio items start */}
             <div className="portfolio-item">
-                <div className={clicked ? "close" : "portfolio-item-inner outer-shadow"}>
-                    <div className={clicked ? "close" : "portfolio-item-img"} >
+                <div className={theme === "dark" ? "portfolio-item-inner outer-shadow-dm" : "portfolio-item-inner outer-shadow"}>
+                    <div className={"portfolio-item-img"} >
 
                         <img src={image} alt="" data-category="full-stack" data-screenshots="images/blog2.png, images/blog3.png, images/blog4.png, images/blog5.png, images/blog6.png, images/blog7.png" />
                         {/* View Project Button */}
-                        <span className="view-project" onClick={handleClick}>View Project</span>
+                        <span className={theme === "dark" ? "view-project active" : "view-project"} onClick={handleClick}>View Project</span>
                         {/* { open > 0  ? <Popup title={title} image={image} url={url} id={setOpen} category={category} repo={repo} description={description} tools={tools} open={open} setOpen={setOpen} /> : ''}  */}
                     </div>
                     <p className="portfolio-item-title">{title}</p>
@@ -54,15 +54,15 @@ function AllProjects({ id, handleClose, title,tools,description, url, image, ima
             </div>
 
             {project && clicked === id ? 
-                <div className="blog-popup-active">
+                <div className={theme === "dark" ? "blog-popup-active active" : "blog-popup-active"}>
                     <div className="pp-details-active">
                         <div className="pp-details-inner">
-                            <div className="pp-title">
+                            <div className={theme === "dark" ? "pp-title active" : "pp-title"}>
                                 <h2>{title}</h2>
-                                <div className="pp-close outer-shadow hover-in-shadow" onClick={handleClose}>&times;</div>
+                                <div className={theme === "dark" ? "pp-close outer-shadow-dm hover-in-shadow-dm" : "pp-close outer-shadow hover-in-shadow"} onClick={handleClose}>&times;</div>
                                 <p>Category - <span className="pp-project-category">{category}</span></p>
                             </div>
-                            <div className="pp-project-details">
+                            <div className={theme === "dark" ? "pp-project-details active" : "pp-project-details"}>
                                 <div className="row">
                                     <div className="pp-description">
                                         <h3>Project Brief:</h3>
@@ -83,13 +83,13 @@ function AllProjects({ id, handleClose, title,tools,description, url, image, ima
                     </div>
                     <div className="pp-main">
                         <div className="pp-main-inner">
-                            <img src={image} alt="" className="pp-img outer-shadow" />
-                            <img src={image2} alt="" className="pp-img outer-shadow" />
-                            <img src={image3} alt="" className="pp-img outer-shadow" />
-                           {image4 ? <img src={image4} alt="" className="pp-img outer-shadow" /> : ""}
-                            {image5 ? <img src={image5} alt="" className="pp-img outer-shadow" /> : ""}
-                            {image6 ? <img src={image6} alt="" className="pp-img outer-shadow" /> : ""}
-                            {image7 ? <img src={image7} alt="" className="pp-img outer-shadow" /> : ""}
+                            <img src={image} alt="" className={theme === "dark" ? "pp-img outer-shadow-dm" : "pp-img outer-shadow"} />
+                            <img src={image2} alt="" className={theme === "dark" ? "pp-img outer-shadow-dm" : "pp-img outer-shadow"} />
+                            <img src={image3} alt="" className={theme === "dark" ? "pp-img outer-shadow-dm" : "pp-img outer-shadow"} />
+                           {image4 ? <img src={image4} alt="" className={theme === "dark" ? "pp-img outer-shadow-dm" : "pp-img outer-shadow"} /> : ""}
+                            {image5 ? <img src={image5} alt="" className={theme === "dark" ? "pp-img outer-shadow-dm" : "pp-img outer-shadow"} /> : ""}
+                            {image6 ? <img src={image6} alt="" className={theme === "dark" ? "pp-img outer-shadow-dm" : "pp-img outer-shadow"} /> : ""}
+                            {image7 ? <img src={image7} alt="" className={theme === "dark" ? "pp-img outer-shadow-dm" : "pp-img outer-shadow"} /> : ""}
                         </div>
                     </div>
                 </div> : ""}

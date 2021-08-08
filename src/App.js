@@ -19,7 +19,7 @@ import {
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [active, setActive] = useState("home");
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("dark");
 
   const themeToggler = () => {
     theme === "light" ? setTheme("dark") : setTheme("light");
@@ -56,7 +56,7 @@ function App() {
           <Services theme={theme} setTheme={setTheme}/>
         </Route>
         <Route path="/portfolio">
-          <Portfolio/>
+          <Portfolio theme={theme} setTheme={setTheme}/>
         </Route>
         <Route path="/testimonials">
           <Testimonials/>
