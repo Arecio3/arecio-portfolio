@@ -1,7 +1,7 @@
 import './testimonials.css';
 import { useState } from 'react';
 
-function Testimonials() {
+function Testimonials({ theme, setTheme}) {
     const [currentSlide, setCurrentSlide] = useState(0);
 
     const data = [
@@ -33,10 +33,10 @@ function Testimonials() {
 
       
     return (
-        <section className="testimonial-section"> 
+        <section className={theme === "dark" ? "testimonial-section active" : "testimonial-section"}> 
             <div className="test-container">
                 <div className="test-row">
-                    <div className="test-header">
+                    <div className={theme === "dark" ? "test-header active" :"test-header"}>
                         <h3>Testimonials</h3>
                         <h1>People Said</h1>
                     </div>
@@ -47,7 +47,7 @@ function Testimonials() {
                             {data.map((d, i) => (
                             <div className="test-slider-container">
                                 {/* testimonial start */}
-                                <div className="test-item">
+                                <div className={theme === "dark" ? "test-item active" : "test-item"}>
                                     <i className="fa fa-quote-left left"></i>
                                     <i className="fa fa-quote-right right"></i>
                                     <p>{d.quote}</p>
@@ -59,8 +59,8 @@ function Testimonials() {
                             ))}
                         </div>
                         <div className="test-slider-nav">
-                            <span onClick={() => handleClick("left")} className="prev outer-shadow hover-in-shadow"><i className="fa fa-angle-left"></i></span>
-                            <span onClick={() => handleClick("right")} className="next outer-shadow hover-in-shadow"><i className="fa fa-angle-right"></i></span>
+                            <span onClick={() => handleClick("left")} className={theme === "dark" ? "prev outer-shadow-dm hover-in-shadow-dm" : "prev outer-shadow hover-in-shadow"}><i className="fa fa-angle-left"></i></span>
+                            <span onClick={() => handleClick("right")} className={theme === "dark" ? "next outer-shadow-dm hover-in-shadow-dm" : "next outer-shadow hover-in-shadow"}><i className="fa fa-angle-right"></i></span>
                         </div>
                     </div>
                 </div>

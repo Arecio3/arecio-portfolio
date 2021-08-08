@@ -59,7 +59,7 @@ function App() {
           <Portfolio theme={theme} setTheme={setTheme}/>
         </Route>
         <Route path="/testimonials">
-          <Testimonials/>
+          <Testimonials theme={theme} setTheme={setTheme}/>
         </Route>
         <Route path="/contact">
           <Contact/>

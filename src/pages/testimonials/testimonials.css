@@ -5,6 +5,14 @@
   min-height: 100vh;
 }
 
+.testimonial-section.active {
+  background-color: var(--black-50-dm);
+}
+
+.test-header.active {
+  color: var(--black-900-dm);
+}
+
 .test-header h1,
 h3 {
   text-align: center;
@@ -30,6 +38,16 @@ h3 {
   padding: 30px;
   text-align: center;
   position: relative;
+  box-shadow: 3px 3px 3px #d0d0d0, -3px -3px 3px #f8f8f8;
+}
+
+.test-item.active {
+  background-color: var(--black-50-dm);
+  box-shadow: 3px 3px 3px #222327, -3px -3px 3px #363636;
+}
+
+.test-item.active span {
+  color: var(--gold-color);
 }
 
 .test-item i {
