@@ -16,15 +16,12 @@
 }
 .effect-wrap .effect {
     position: absolute;
-    z-index: -1;
+    z-index: 1;
 }
-/* Comment out below to see shapes */
-.effect-wrap.active {
+.effect-wrap-active .effect {
     position: absolute;
-    z-index: -1;
+    z-index: 1;
 }
-
-
 
 .home-section .full-screen {
     padding: 50px 0;

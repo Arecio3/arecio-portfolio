@@ -6,7 +6,7 @@ function Home({theme, setTheme}) {
     return (
         <section className={theme === "dark" ? "home-section active" : "home-section section"}>
             {/* Effect wrap start */}
-            <div className={theme === "dark" ? "effect-wrap active" : "effect-wrap"}>
+            <div className={theme === "dark" ? "effect effect-wrap-active" : "effect effect-wrap"}>
                 <div className="effect effect-1"></div>
                 <div className="effect effect-2">
                     <div></div>
