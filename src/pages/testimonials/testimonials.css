@@ -137,3 +137,17 @@ h3 {
 .test-slider-nav span:after {
   border-radius: 50%;
 }
+
+@media (max-width: 768px) {
+  .test-item {
+    flex: 0 0 80%;
+    max-width: 80%;
+  }
+}
+@media (max-width: 428px) {
+  .test-item {
+    flex: 0 0 90%;
+    max-width: 90%;
+    height: 75%;
+  }
+}
