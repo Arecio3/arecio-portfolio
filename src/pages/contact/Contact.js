@@ -1,13 +1,13 @@
 import { useForm, ValidationError } from '@formspree/react';
 import './contact.css';
 
-function Contact() {
+function Contact({ theme, setTheme}) {
     const [state, handleSubmit] = useForm("xpzkybjr");
     // if (state.succeeded) {
     //     return <p>Thanks for joining!</p>;
     // }
     return (
-        <section className="contact">
+        <section className={theme === "dark" ? "contact active" : "contact"}>
             <div className="contact-container">
                 <div className="contact-header">
                     <div className="contact-title">
@@ -17,21 +17,21 @@ function Contact() {
                 </div>
                 <div className="contact-box">
                     <div className="contact-item">
-                        <div className="contact-item-inner outer-shadow">
+                        <div className={theme === "dark" ? "contact-item-inner outer-shadow-dm" : "contact-item-inner outer-shadow"}>
                             <i className="fa fa-phone"></i>
                             <span>Phone</span>
                             <p>+1 813-395-2938</p>
                         </div>
                     </div>
                     <div className="contact-item">
-                        <div className="contact-item-inner outer-shadow">
+                        <div className={theme === "dark" ? "contact-item-inner outer-shadow-dm" : "contact-item-inner outer-shadow"}>
                             <i className="fa fa-envelope"></i>
                             <span>Gmail</span>
                             <p>cuba289@gmail.com</p>
                         </div>
                     </div>
                     <div className="contact-item">
-                        <div className="contact-item-inner outer-shadow">
+                        <div className={theme === "dark" ? "contact-item-inner outer-shadow-dm" : "contact-item-inner outer-shadow"}>
                             <i className="fa fa-map-marker-alt"></i>
                             <span>Located</span>
                             <p>Tampa, Florida- 33615</p>
@@ -44,7 +44,7 @@ function Contact() {
                         <form onSubmit={handleSubmit}>
                             <div className="contact-box">
                                 <div className="w50">
-                                    <div className="input-group outer-shadow hover-in-shadow">
+                                    <div className={theme === "dark" ? "input-group outer-shadow-dm hover-in-shadow-dm" : "input-group outer-shadow hover-in-shadow"}>
 
                                         <input
                                             placeholder="Email"
@@ -54,7 +54,7 @@ function Contact() {
                                             className="input-control"
                                         />
                                     </div>
-                                    <div className="input-group outer-shadow hover-in-shadow">
+                                    <div className={theme === "dark" ? "input-group outer-shadow-dm hover-in-shadow-dm" : "input-group outer-shadow hover-in-shadow"}>
 
                                         <input
                                             placeholder="Name"
@@ -64,7 +64,7 @@ function Contact() {
                                             className="input-control"
                                         />
                                     </div>
-                                    <div className="input-group outer-shadow hover-in-shadow">
+                                    <div className={theme === "dark" ? "input-group outer-shadow-dm hover-in-shadow-dm" : "input-group outer-shadow hover-in-shadow"}>
                                         <input
                                             placeholder="Subject"
                                             id="subject"
@@ -80,7 +80,7 @@ function Contact() {
                                     errors={state.errors}
                                 />
                                 <div className="w50">
-                                    <div className="input-group outer-shadow hover-in-shadow">
+                                    <div className={theme === "dark" ? "input-group outer-shadow-dm hover-in-shadow-dm" : "input-group outer-shadow hover-in-shadow"}>
                                         <textarea
                                             placeholder="Message"
                                             id="message"
@@ -98,9 +98,9 @@ function Contact() {
                             />
                             <div className="contact-box">
                                 <div className="submit-btn">
-                                   {state.succeeded ? <button type="submit" className="btn-1 outer-shadow hover-in-shadow">
+                                   {state.succeeded ? <button type="submit" className={theme === "dark" ? "btm-1 outer-shadow-dm hover-in-shadow-dm" : "btn-1 outer-shadow hover-in-shadow"}>
                                         Message Sent!
-                                    </button> : <button type="submit" className="btn-1 outer-shadow hover-in-shadow" disabled={state.submitting}>
+                                    </button> : <button type="submit" className={theme === "dark" ? "btn-1 outer-shadow-dm hover-in-shadow-dm" :"btn-1 outer-shadow hover-in-shadow"} disabled={state.submitting}>
                                         Send Message
                                     </button>}
                                 </div>

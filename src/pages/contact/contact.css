@@ -1,8 +1,17 @@
 @import "../../styles/color-1.css";
+@import "../../styles/colors-2.css";
 
 .contact {
   padding: 80px 0 80px;
   min-height: 100vh;
+}
+
+.contact.active {
+  background-color: var(--black-50-dm);
+}
+
+.contact.active h3 {
+  color: var(--black-900-dm);
 }
 
 .contact-header .contact-title {

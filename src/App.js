@@ -62,7 +62,7 @@ function App() {
           <Testimonials theme={theme} setTheme={setTheme}/>
         </Route>
         <Route path="/contact">
-          <Contact/>
+          <Contact theme={theme} setTheme={setTheme}/>
         </Route>
       </Switch>
 
