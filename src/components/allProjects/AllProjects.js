@@ -67,8 +67,8 @@ function AllProjects({ id, handleClose, title,tools,description, url, image, ima
                                         <ul>
                                             <li>Date - <span>2021</span></li>
                                             <li>Tools - <span>{tools}</span></li>
-                                            <li>Site - <a href={url}><span>{url}</span></a></li>
-                                            <li>Repo - <a href={repo}><span>{repo}</span></a></li>
+                                            <li>Site - <a href={url} target="_blank" rel="noreferrer noopener"><span>{url}</span></a></li>
+                                            <li>Repo - <a href={repo} target="_blank" rel="noreferrer noopener"><span>{repo}</span></a></li>
                                         </ul>
                                     </div>
                                 </div>
