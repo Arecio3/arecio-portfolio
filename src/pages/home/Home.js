@@ -1,5 +1,6 @@
 import './home.css';
 import selfie from "../../images/selfie.png";
+import selfieDm from "../../images/selfieDm.jpeg";
 import { Link } from "react-router-dom";
 
 function Home({theme, setTheme}) {
@@ -64,7 +65,7 @@ function Home({theme, setTheme}) {
                     </div>
                     <div className="home-img">
                         <div className={theme === "dark" ? "imgBox inner-shadow-dm" : "imgBox inner-shadow"}>
-                            <img src={selfie} alt="" className={theme === "dark" ? "selfie outer-shadow-dm": "selfie outer-shadow"} />
+                            <img src={theme === "dark" ? selfieDm : selfie} alt="" className={theme === "dark" ? "selfie outer-shadow-dm": "selfie outer-shadow"} />
                         </div>
                     </div>
                 </div>
