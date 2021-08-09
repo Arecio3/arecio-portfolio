@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Me from "../../images/selfie.png";
 import Education from "../../components/education/Education";
 import Skills from '../../components/skills/Skills';
+import selfieDm from "../../images/selfieDm.jpeg";
 import { Link } from 'react-router-dom';
 
 function About({ theme, setTheme }) {
@@ -23,7 +24,7 @@ function About({ theme, setTheme }) {
                 <div className="row">
                     <div className="aboutImg">
                         <div className={ theme === "dark" ? "imgBox inner-shadow-dm active" : "imgBox inner-shadow"}>
-                            <img src={Me} alt="profile pic" className={theme === "dark" ? "outer-shadow-dm" :"outer-shadow"} />
+                            <img src={theme === "dark" ? selfieDm : Me} alt="profile pic" className={theme === "dark" ? "outer-shadow-dm" :"outer-shadow"} />
                         </div>
 
                         <div className="socialLinks">
