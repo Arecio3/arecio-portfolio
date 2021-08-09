@@ -7,7 +7,7 @@ function Contact({ theme, setTheme}) {
     //     return <p>Thanks for joining!</p>;
     // }
     return (
-        <section className={theme === "dark" ? "contact active" : "contact"}>
+        <section className={theme === "dark" ? "contact-section active" : "contact-section"}>
             <div className="contact-container">
                 <div className="contact-header">
                     <div className="contact-title">
@@ -39,6 +39,7 @@ function Contact({ theme, setTheme}) {
                     </div>
                     {/* End of Contact Item */}
                 </div>
+                <div className="psa"><h4>PSA: Make sure to leave your email so we can work together :)</h4></div>
                 <div className="contact-box">
                     <div className="contact-form">
                         <form onSubmit={handleSubmit}>

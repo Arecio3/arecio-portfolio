@@ -1,16 +1,16 @@
 @import "../../styles/color-1.css";
 @import "../../styles/colors-2.css";
 
-.contact {
+.contact-section {
   padding: 80px 0 80px;
   min-height: 100vh;
 }
 
-.contact.active {
+.contact-section.active {
   background-color: var(--black-50-dm);
 }
 
-.contact.active h3 {
+.contact-section.active h3 {
   color: var(--black-900-dm);
 }
 
@@ -31,16 +31,17 @@
 .contact-box {
   display: flex;
   justify-content: center;
+    flex-wrap: wrap;
 }
 
-.contact-item {
+.contact-section .contact-item {
   flex: 0 0 33.33%;
-  max-width: 23.33%;
+  max-width: 33.33%;
   padding: 15px;
   margin-top: 55px;
 }
 
-.contact-item-inner {
+.contact-section .contact-item-inner {
   padding: 30px 15px;
   text-align: center;
   border-radius: 5px;
@@ -117,5 +118,33 @@
 
 .submit-btn button {
     border: none;
+}
 
+.psa {
+  margin-top: 15px;
+  text-align: center;
+  color: var(--text-black-300);
+}
+
+@media (max-width: 768px) {
+  .contact-section .contact-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin: 2px;
+  }
+  .contact-section .w50 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .contact-box .submit-btn {
+    position: absolute;
+    margin: 15px;
+  }
+}
+@media (max-width: 428px) {
+  .contact-box .submit-btn {
+    position: absolute;
+    margin: 5px;
+  }
 }

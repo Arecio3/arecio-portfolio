@@ -45,7 +45,7 @@ function Testimonials({ theme, setTheme}) {
                     <div className="test-box">
                         <div className="test-slider" style={{ transform: `translateX(-${currentSlide * 100}vw)` }}>
                             {data.map((d, i) => (
-                            <div className="test-slider-container">
+                            <div className="test-slider-container" key={i}>
                                 {/* testimonial start */}
                                 <div className={theme === "dark" ? "test-item active" : "test-item"}>
                                     <i className="fa fa-quote-left left"></i>
