@@ -4,6 +4,9 @@
 
 .portfolio-items {
     display: inline-block;
+    margin: 10px 35px;
+    /* margin-right: 35px;
+    margin-left: 25px; */
 }
 .close {
     display: none;
@@ -127,6 +130,7 @@
     .portfolio-section .portfolio-items {
         flex: 0 0 50%;
         max-width: 50%;
+        margin: 0;
     }
 }
 @media(orientation: landscape) {
@@ -140,5 +144,6 @@
     .portfolio-section .portfolio-items {
         flex: 0 0 100%;
         max-width: 100%;
+        margin: 0;
     }
 }

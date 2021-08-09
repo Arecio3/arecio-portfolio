@@ -83,7 +83,7 @@
     text-transform: capitalize;
     margin-top: 10px;
     border-radius: 30px;
-    transition: all 0.3s ease;
+    transition: all 5s ease-in;
 }
 
 .nav-menu ul li:after {
