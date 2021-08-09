@@ -20,6 +20,13 @@ import hermesMobile from './images/hermesMobile.png';
 import stockchasr1 from './images/stockchasr1.png';
 import stockchasr2 from './images/stockchasr2.png';
 import stockchasr3 from './images/stockchasr3.png';
+import nozama1 from './images/nozama1.png';
+import nozama2 from './images/nozama2.png';
+import nozama3 from './images/nozama3.png';
+import nozama4 from './images/nozama4.png';
+import nozama5 from './images/nozama5.png';
+import nozama6 from './images/nozama6.png';
+import nozama7 from './images/nozama7.png';
 
 const FullStack = [
     {
@@ -27,7 +34,7 @@ const FullStack = [
         title: "Deep Thoughts",
         tools: "React JS, Multer, Mongoose, Express",
         description: "Make an account and create blogs of your Deep Thoughts with the help of Mongoose and Express routes a user will have secure and private accounts, read they're own as well as other users blogs in the main dashboard if the blog was posted by the user then only they are allowed to edit the blog, if not they are only show the date, time, and user associated with the blog. You are also permitted with the help of Multer upload an image from your computer for your blog thumbnail and user profile. Not only are you able to search blogs through the dashboard but by also by category.",
-        URL: "www.domain.com",
+        URL: "https://deep-thoughttss.herokuapp.com/",
         image: blog1,
         image2: blog2,
         image3: blog3,
@@ -88,6 +95,22 @@ const FullStack = [
         image3: stockchasr3,
         category: "Full Stack",
         repo: "https://github.com/adamalcantara/stockchasr"
+    },
+    {
+        id: 6,
+        title: "Nozama",
+        tools: "React JS, Stripe, Moment, firebase, noSQL, Material-UI",
+        description: "Amazons evil twin Nozama ! I wanted to eventually open up my own E-Commerce store or help someone build there's so what better way then to model the most successful one of them all ! Of course eventually I intend to give it a new look in version 1.5 right now I'm using Stripe in order to mock an actual transaction right now it's only being ran in test mode right now because I haven't gave it my finishing touches but still you can put in your info or 42 repeating and mock a real transaction (don't expect any of the products to ever get there) you can add as many items as you like with the number of items being added to the cart shown in real time, the checkout page has a calculated total of all the products combined no shipping fee :). When you hit checkout it process the payment and gives you a order receipt, thank you for shopping at Nozama !",
+        URL: "https://nozama-53fd6.web.app/",
+        image: nozama1,
+        image2: nozama2,
+        image3: nozama3,
+        image4: nozama4,
+        image5: nozama5,
+        image6: nozama6,
+        image7: nozama7,
+        category: "Full Stack",
+        repo: "https://github.com/Arecio3/nozama"
     }
 ]
 
