@@ -1,6 +1,13 @@
 @import "../../styles/color-1.css";
 @import "../../styles/colors-2.css";
 
+.open {
+    opacity: 1;
+}
+.close {
+    animation: fadeOut 0.3s ease;
+}
+
 .nav-menu {
     position: fixed;
     background-color: var(--bg-black-50);
@@ -11,7 +18,7 @@
     height: 100%;
     z-index: 999;
     overflow-y: auto;
-    transition: all .5s ease;
+    animation: fadeInTop .3s ease;
 }
 .nav-menu.active {
     position: fixed;
@@ -23,13 +30,7 @@
     height: 100%;
     z-index: 999;
     overflow-y: auto;
-    transition:all 0.5s ease;
-}
-
-.Close {
-    z-index: -1;
-    opacity: 0;
-    visibility: hidden;
+    animation: fadeInTop .3s ease;
 }
 
 .nav-menu .close-nav-menu {
@@ -51,7 +52,7 @@
     color: red;
 }
 
-.nav-menu .close-nav-menu:after {
+.nav-menu .close-nav-menu::after {
     border-radius: 50%;
 }
 
@@ -60,7 +61,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 
 .nav-menu ul {
@@ -83,7 +83,6 @@
     text-transform: capitalize;
     margin-top: 10px;
     border-radius: 30px;
-    transition: all 5s ease-in;
 }
 
 .nav-menu ul li:after {
@@ -103,4 +102,21 @@
     color: var(--text-black-600);
     transform: translateY(-50%) rotate(-90deg);
     left: -60px;
+}
+
+@keyframes fadeInTop {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
