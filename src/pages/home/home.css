@@ -287,7 +287,11 @@
     }
     
     .effect-5 {
-        top: 23%;
+        top: 20%;
+    }
+    .effect-4 {
+        top: 15%;
+        left: 10%;
     }
     .effect-3 {
         left: 35%;
@@ -353,4 +357,10 @@
   .home-section .home-text {
     margin-top: 90%;
   }
+}
+
+@media (max-width: 390px) {
+    .home-section .home-img .imgBox {
+        top: 12%;
+    }
 }
