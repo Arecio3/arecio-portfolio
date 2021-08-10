@@ -131,7 +131,7 @@
 
 .toggleTheme {
     position: absolute;
-    right: 200px;
+    right: 150px;
     cursor: pointer;
     transition:cursor 0.3s ease;
     border: none;
@@ -139,7 +139,7 @@
 }
 .toggleTheme.active {
     position: absolute;
-    right: 200px;
+    right: 150px;
     cursor: pointer;
     transition:cursor 0.3s ease;
     border: none;
