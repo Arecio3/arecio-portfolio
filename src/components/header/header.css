@@ -131,6 +131,7 @@
 
 .toggleTheme {
     position: absolute;
+    margin: 5px;
     right: 180px;
     cursor: pointer;
     transition:cursor 0.3s ease;
