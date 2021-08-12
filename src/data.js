@@ -1,10 +1,8 @@
-import blog1 from './images/blog1.png';
-import blog2 from './images/blog2.png';
-import blog3 from './images/blog3.png';
-import blog4 from './images/blog4.png';
-import blog5 from './images/blog5.png';
-import blog6 from './images/blog6.png';
-import blog7 from './images/blog7.png';
+import halo1 from './images/halo1.png';
+import halo2 from './images/halo2.png';
+import halo3 from './images/halo3.png';
+import halo4 from './images/halo4.png';
+import halo5 from './images/halo5.png';
 import searchy1 from './images/searchy1.png';
 import searchy2 from './images/searchy2.png';
 import searchyMobile1 from './images/searchyMobile1.png';
@@ -31,19 +29,17 @@ import nozama7 from './images/nozama7.png';
 const FullStack = [
     {
         id: 1,
-        title: "Deep Thoughts",
+        title: "Halo",
         tools: "React JS, Multer, Mongoose, Express",
-        description: "(Still under development) Make an account and create blogs of your Deep Thoughts with the help of Mongoose and Express routes a user will have secure and private accounts, read they're own as well as other users blogs in the main dashboard if the blog was posted by the user then only they are allowed to edit the blog, if not they are only show the date, time, and user associated with the blog. You are also permitted with the help of Multer upload an image from your computer for your blog thumbnail and user profile. Not only are you able to search blogs through the dashboard but by also by category.",
-        URL: "N/A",
-        image: blog1,
-        image2: blog2,
-        image3: blog3,
-        image4: blog4,
-        image5: blog5,
-        image6: blog6,
-        image7: blog7,
+        description: "A Social Media App (As of right now only Google Login is working)",
+        URL: "https://social-media-67ld8voix-arecio3.vercel.app/",
+        image: halo1,
+        image2: halo2,
+        image3: halo3,
+        image4: halo4,
+        image5: halo5,
         category: "Full Stack",
-        repo: "https://github.com/Arecio3/arecios-blog"
+        repo: "https://github.com/Arecio3/social-media"
     },
     {
         id: 2,
