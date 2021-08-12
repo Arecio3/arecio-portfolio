@@ -6,7 +6,7 @@ import './allprojects.css';
 function AllProjects({ id, handleClose, title,tools,description, url, image, image2, image3, image4, image5, image6, image7, category,repo, clicked,setClicked, theme}) {
     const [project, setProject] = useState("");
 
-    const projectFilters = ["Documaker", "Hermes", "Searchy", "DT", "Stockchasr", "Nozama"];
+    const projectFilters = ["Documaker", "Hermes", "Searchy", "Halo", "Stockchasr", "Nozama"];
 
     const handleClick = () => {
         //  this.setState({ clicked: this.state.clicked})
