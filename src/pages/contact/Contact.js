@@ -20,7 +20,7 @@ function Contact({ theme, setTheme}) {
                         <div className={theme === "dark" ? "contact-item-inner outer-shadow-dm" : "contact-item-inner outer-shadow"}>
                             <i className="fa fa-phone"></i>
                             <span>Phone</span>
-                            <p>+1 813-395-2938</p>
+                            <p>+1 813-385-2938</p>
                         </div>
                     </div>
                     <div className="contact-item">
