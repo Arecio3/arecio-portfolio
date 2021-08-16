@@ -163,3 +163,9 @@ h3 {
     right: 46%;
   }
 }
+
+@media (max-width: 375px) {
+  .downArrow4 {
+    top: 90%;
+  }
+}
