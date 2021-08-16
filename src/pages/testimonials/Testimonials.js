@@ -1,5 +1,7 @@
 import './testimonials.css';
 import { useState } from 'react';
+import { Link } from "react-router-dom";
+import { AiOutlineArrowDown } from "react-icons/ai"
 
 function Testimonials({ theme, setTheme}) {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -65,6 +67,7 @@ function Testimonials({ theme, setTheme}) {
                     </div>
                 </div>
             </div>
+            <Link to="/contact"><div className="downArrow4"><AiOutlineArrowDown /></div></Link>
         </section>
     )
 }

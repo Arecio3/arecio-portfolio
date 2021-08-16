@@ -47,3 +47,12 @@
 .inner-shadow {
     box-shadow: var( --inner-shadow);
 }
+@keyframes arrowBlink {
+    0% {
+      color: gray;
+    }
+    100% {
+      opacity: 0%;
+      color: var(--gold-color);
+    }
+  }

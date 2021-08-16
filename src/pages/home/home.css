@@ -189,6 +189,15 @@
   opacity: 0.5;
 }
 
+.downArrow {
+  position: absolute;
+  max-width: 100vw;
+  top: 85%;
+  right: 50%;
+  animation: arrowBlink 2s infinite;
+  font-size: 35px;
+}
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -299,6 +308,11 @@
         width: 180px;
         height: 180px;
     }
+
+    .downArrow {
+      top: 90%;
+      right: 47%;
+    }
 }
 
 
@@ -322,6 +336,9 @@
 
   .home-section .home-img .imgBox {
       right: 32px;
+  }
+  .downArrow {
+    top: 83%;
   }
 }
 
@@ -356,6 +373,10 @@
   }
   .home-section .home-text {
     margin-top: 90%;
+  }
+  .downArrow {
+    top: 88%;
+    right: 47%;
   }
 }
 

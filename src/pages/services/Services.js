@@ -1,4 +1,6 @@
 import "./services.css";
+import { Link } from "react-router-dom";
+import { AiOutlineArrowDown } from "react-icons/ai"
 
 function Services({ theme, setTheme}) {
     return (
@@ -78,6 +80,7 @@ function Services({ theme, setTheme}) {
                     {/* Service item end */}
                 </div>
             </div>            
+                <Link to="/portfolio"><div className="downArrowTwo"><AiOutlineArrowDown /></div></Link>
         </section>
     )
 }

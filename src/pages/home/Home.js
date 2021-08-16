@@ -1,7 +1,9 @@
 import './home.css';
 import selfie from "../../images/selfie.png";
 import selfieDm from "../../images/selfieDm.jpeg";
+// import proSelfieDm from '../../images/DSC_1525.jpg'
 import { Link } from "react-router-dom";
+import { AiOutlineArrowDown } from "react-icons/ai"
 
 function Home({theme, setTheme}) {
     return (
@@ -69,6 +71,7 @@ function Home({theme, setTheme}) {
                         </div>
                     </div>
                 </div>
+                <Link to="/services"><div className="downArrow"><AiOutlineArrowDown /></div></Link>
             </div>
         </section>
     )

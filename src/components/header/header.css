@@ -131,7 +131,7 @@
 
 .toggleTheme {
     position: absolute;
-    right: 150px;
+    right: 180px;
     cursor: pointer;
     transition:cursor 0.3s ease;
     border: none;
@@ -139,7 +139,7 @@
 }
 .toggleTheme.active {
     position: absolute;
-    right: 150px;
+    /* right: 150px; */
     cursor: pointer;
     transition:cursor 0.3s ease;
     border: none;
@@ -148,7 +148,7 @@
 }
 .toggleTheme:before {
     position: absolute;
-    right: 350px;
+    /* right: 350px; */
     cursor: pointer;
     transition:cursor 0.3s ease;
     border: none;
@@ -156,7 +156,7 @@
 }
 .toggleTheme:after {
     position: absolute;
-    right: 350px;
+    /* right: 350px; */
     cursor: pointer;
     transition:cursor 0.3s ease;
     border: none;
