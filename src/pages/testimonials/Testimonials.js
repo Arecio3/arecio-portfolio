@@ -9,19 +9,19 @@ function Testimonials({ theme, setTheme}) {
     const data = [
         {
             id: 1,
-            quote: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque totam quis aspernatur dolores pariatur autem. Rerum quos incidunt hic totam suscipit. Iusto accusamus quasi esse iure tempore? Veniam, iure praesentium?",
+            quote: "Amazing Work! Really knowledgeable, fast learner and good communicator!!",
             img: "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg",
             name: "Patrick Moore"
         },
         {
             id: 2,
-            quote: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque totam quis aspernatur dolores pariatur autem. Rerum quos incidunt hic totam suscipit. Iusto accusamus quasi esse iure tempore? Veniam, iure praesentium?",
+            quote: "Wide variety of skills awesome communication and enthusiasm!!",
             img: "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg",
             name: "Dan Rosenbaum"
         },
         {
             id: 3,
-            quote: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque totam quis aspernatur dolores pariatur autem. Rerum quos incidunt hic totam suscipit. Iusto accusamus quasi esse iure tempore? Veniam, iure praesentium?",
+            quote: "Great to work with! Awesome team player open to new ideas and willing to learn!",
             img: "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg",
             name: "Adam Alcantara"
         },
