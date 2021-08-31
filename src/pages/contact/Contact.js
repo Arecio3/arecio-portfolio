@@ -99,7 +99,7 @@ function Contact({ theme, setTheme}) {
                             />
                             <div className="contact-box">
                                 <div className="submit-btn">
-                                   {state.succeeded ? <button type="submit" className={theme === "dark" ? "btm-1 outer-shadow-dm hover-in-shadow-dm" : "btn-1 outer-shadow hover-in-shadow"}>
+                                   {state.succeeded ? <button type="submit" className={theme === "dark" ? "btn-1 outer-shadow-dm hover-in-shadow-dm" : "btn-1 outer-shadow hover-in-shadow"}>
                                         Message Sent!
                                     </button> : <button type="submit" className={theme === "dark" ? "btn-1 outer-shadow-dm hover-in-shadow-dm" :"btn-1 outer-shadow hover-in-shadow"} disabled={state.submitting}>
                                         Send Message
