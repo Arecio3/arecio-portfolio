@@ -1,5 +1,7 @@
 import './skills.css';
 import { SiJavascript, SiCss3} from "react-icons/si";
+import python from '../../images/ python.png'
+
 import {  DiReact, DiSass, DiMysql, DiGithubBadge, DiNodejs, DiBootstrap, DiMongodb, DiHtml5 } from "react-icons/di";
 function Skills({ theme, setTheme }) {
     return (
@@ -9,6 +11,9 @@ function Skills({ theme, setTheme }) {
           <div className="skills tab-content">
               <div className="row">
                   {/* skill item start */}
+                  <div className={theme === "dark" ? "skillItem outer-shadow-dm hover-in-shadow-dm" : "skillItem outer-shadow hover-in-shadow"}>
+                      <img className="python" src={python} alt="python logo"/>
+                  </div>
                   <div className={theme === "dark" ? "skillItem outer-shadow-dm hover-in-shadow-dm" : "skillItem outer-shadow hover-in-shadow"}>
                       <DiHtml5 color="red"/>
                   </div>
