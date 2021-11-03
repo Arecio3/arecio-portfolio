@@ -2,10 +2,12 @@
 @import "../../styles/colors-2.css";
 
 .open {
-    opacity: 1;
+    /* opacity: 1; */
+    height: 100vh;   
 }
 .close {
     animation: fadeOut 0.3s ease;
+    height: -100vh;
 }
 
 .nav-menu {

@@ -7,7 +7,7 @@ function Contact({ theme, setTheme}) {
     //     return <p>Thanks for joining!</p>;
     // }
     return (
-        <section className={theme === "dark" ? "contact-section active" : "contact-section"}>
+        <section className={theme === "dark" ? "contact-section active" : "contact-section"} id="contact">
             <div className="contact-container">
                 <div className="contact-header">
                     <div className="contact-title">

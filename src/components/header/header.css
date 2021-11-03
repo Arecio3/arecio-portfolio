@@ -42,15 +42,18 @@
     box-shadow: var(--inner-shadow);
 }
 .header {
-    /* background-color: var(--navy-color); */
+    background-color: var(--black-50-dm);
     padding: 20px 15px;
-    position: absolute;
+    position: sticky;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 99;
 }
+.header.active {
+    background-color: var( --bg-black-50);
 
+}
 .logo {
     text-decoration: none;
     font-family: 'Great Vibes', cursive;
@@ -191,3 +194,10 @@
     }
 }
 
+@media screen and (max-width: 480px) {
+    .logo {
+        position: absolute;
+        margin-top: -4%;
+        /* line-height: 50px; */
+    }
+}

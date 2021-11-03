@@ -10,12 +10,12 @@ body {
   background-color: var(--bg-black-50);
   font-size: 16px;
   line-height: 1.5;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
-body.stop-scrolling {
+/* body.stop-scrolling {
   overflow-y: hidden;
-}
+} */
 
 * {
   margin: 0;

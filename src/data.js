@@ -107,6 +107,13 @@ const FullStack = [
         image7: nozama7,
         category: "Full Stack",
         repo: "https://github.com/Arecio3/nozama"
+    },
+    {
+        id: 7,
+        title: "Popnado",
+        tools: "Python 3, Folium, Pandas",
+        description: "Have you ever wanted an app that can tell you where the Volcanoes in the U.S are as well as a complete interactive map! I do plan on expanding population data right now is only color coded.",
+        category: "Front End",
     }
 ]
 

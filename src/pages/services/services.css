@@ -89,13 +89,6 @@
     line-height: 26px;
 }
 
-.downArrowTwo {
-    position: absolute;
-   animation: arrowBlink 2s infinite;
-   font-size: 35px;
-    right: 50%;
-   margin-top: 1rem;
-}
 
 @media(max-width: 991px) {
     .service-section .service-item {
@@ -109,8 +102,4 @@
         max-width: 100%;
     }
 }
-@media (max-width: 428px) {
-    .downArrowTwo {
-        right: 45%;
-    }
-}
+

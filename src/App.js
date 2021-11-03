@@ -9,11 +9,6 @@ import Portfolio from "./pages/portfolio/Portfolio";
 import Testimonials from './pages/testimonials/Testimonials';
 import Contact from "./pages/contact/Contact";
 import { ThemeProvider } from "styled-components";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from "react-router-dom";
 
 
 function App() {
@@ -38,32 +33,14 @@ function App() {
 
   return (
     <ThemeProvider theme={themes[theme]}>
-      <Router className="App">
-      <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} theme={theme} setTheme={setTheme}/>
+       <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} theme={theme} setTheme={setTheme}/>
       <NavMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} active={active} setActive={setActive} theme={theme} setTheme={setTheme}/>
-
-      <Switch>
-        <Route exact path="/">
           <Home theme={theme} setTheme={setTheme}/>
-        </Route>
-        <Route  path="/about">
           <About theme={theme} setTheme={setTheme}/>
-        </Route>
-        <Route path="/services">
           <Services theme={theme} setTheme={setTheme}/>
-        </Route>
-        <Route path="/portfolio">
           <Portfolio theme={theme} setTheme={setTheme}/>
-        </Route>
-        <Route path="/testimonials">
           <Testimonials theme={theme} setTheme={setTheme}/>
-        </Route>
-        <Route path="/contact">
           <Contact theme={theme} setTheme={setTheme}/>
-        </Route>
-      </Switch>
-
-    </Router>
     </ThemeProvider>
   );
 }

@@ -16,7 +16,7 @@ function Header({ menuOpen, setMenuOpen, theme, setTheme }) {
     const icon = theme === "light" ? <HiMoon className="moon" size={39} /> : <CgSun className="sun" size={39} color="#c4a35a" background_color="transparent"/>;
 
     return (
-        <header className="header">
+        <header className={ theme === "dark" ?  "header" : "header active"}>
             <div className="container">
                 <div className="row justify-content-between">
                     <div className="logoContainer">

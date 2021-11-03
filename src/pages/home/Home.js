@@ -3,11 +3,10 @@ import selfie from "../../images/selfie.png";
 import selfieDm from "../../images/selfieDm.jpeg";
 // import proSelfieDm from '../../images/DSC_1525.jpg'
 import { Link } from "react-router-dom";
-import { AiOutlineArrowDown } from "react-icons/ai"
 
 function Home({theme, setTheme}) {
     return (
-        <section className={theme === "dark" ? "home-section active" : "home-section section"}>
+        <section className={theme === "dark" ? "home-section active" : "home-section section"} id="home">
             {/* Effect wrap start */}
             <div className={theme === "dark" ? "effect effect-wrap-active" : "effect effect-wrap"}>
                 <div className="effect effect-1"></div>
@@ -71,7 +70,6 @@ function Home({theme, setTheme}) {
                         </div>
                     </div>
                 </div>
-                <Link to="/services"><div className="downArrow"><AiOutlineArrowDown /></div></Link>
             </div>
         </section>
     )

@@ -124,14 +124,6 @@
   color: var(--text-black-600);
   font-weight: bold;
 }
-.downArrow3 {
-  animation: arrowBlink 2s infinite;
-  position: absolute;
-  max-width: 100vw;
-  top: 77rem;
-  right: 50%;
-  font-size: 35px;
-}
 @media (max-width: 991px) {
   .portfolio-section .portfolio-items {
     flex: 0 0 50%;
@@ -151,15 +143,5 @@
     flex: 0 0 100%;
     max-width: 100%;
     margin: 0;
-  }
-
-  .downArrow3 {
-      top: 116.8rem;
-  }
-}
-@media (max-width: 390px) {
-  .downArrow3 {
-    top: 115rem;
-    right: 45%;
   }
 }

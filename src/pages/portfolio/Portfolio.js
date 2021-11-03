@@ -2,8 +2,6 @@ import './portfolio.css';
 import AllProjects from '../../components/allProjects/AllProjects';
 import { useState, useEffect } from 'react';
 import FullStack from '../../data';
-import { Link } from "react-router-dom";
-import { AiOutlineArrowDown } from "react-icons/ai"
 
 function Portfolio({ theme, setTheme}) {
     const [selected, setSelected] = useState("All");
@@ -40,7 +38,7 @@ function Portfolio({ theme, setTheme}) {
 
     }, [selected, setSelected])
     return (
-        <div>
+        <div id="portfolio">
             <section className={theme === "dark" ? "portfolio-section active" : "portfolio-section"}>
                 <div className="container">
                     <div className={clicked ? "close" : "row"}>
@@ -82,7 +80,6 @@ function Portfolio({ theme, setTheme}) {
                     </div> : ''}
                     {/* Filter end */}
                 </div>
-                <Link to="/testimonials"><div className="downArrow3"><AiOutlineArrowDown /></div></Link>
             </section>
         </div>
     )
