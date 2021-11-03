@@ -6,7 +6,7 @@ import Skills from '../../components/skills/Skills';
 import selfieDm from "../../images/selfieDm.jpeg";
 import { Link } from 'react-router-dom';
 
-const resume = "https://docdro.id/d0QXAoe";
+const resume = "https://docdro.id/XKAWXMQ";
 
 function About({ theme, setTheme }) {
     const [selected, setSelected] = useState(1);

@@ -28,7 +28,7 @@ function AllProjects({ id, handleClose, title,tools,description, url, image, ima
             setClicked(5)
         } else if (id === 7) {
             setProject(projectFilters[6])
-            setClicked(6)
+            setClicked(7)
         } else if (id === 6) {
             setProject(projectFilters[5])
             setClicked(6)
