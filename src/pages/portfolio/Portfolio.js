@@ -1,10 +1,10 @@
 import './portfolio.css';
 import AllProjects from '../../components/allProjects/AllProjects';
 import { useState, useEffect } from 'react';
-import FullStack from '../../data';
+import  {FullStack, Frontend}  from '../../data';
 
 function Portfolio({ theme, setTheme}) {
-    const [selected, setSelected] = useState("All");
+    const [selected, setSelected] = useState("Full Stack");
     const [clicked, setClicked] = useState(false);
     const [data, setData] = useState([]);
     // const myData = FullStack;
@@ -25,11 +25,11 @@ function Portfolio({ theme, setTheme}) {
 
     useEffect(() => {
         switch (selected) {
-            case "All":
+            case "Full Stack":
                 setData(FullStack);
                 break;
-            case "FullStack":
-                setData(FullStack);
+            case "Front End":
+                setData(Frontend);
                 break;
             default:
                 setData(FullStack);
@@ -49,11 +49,11 @@ function Portfolio({ theme, setTheme}) {
                     {/* Filter starts */}
                     <div className={clicked ? "close" : "row"}>
                         <div className="portfolioFilter">
-                        {selected === "All" ? <span className={theme === "dark" ? "filterItem outer-shadow-dm active" : "filterItem outer-shadow active"} data-target="all" onClick={() => setSelected("All")}>All</span> : <span className="filterItem" onClick={() => setSelected("All")}>All</span>}
+                        {selected === "Front End" ? <span className={theme === "dark" ? "filterItem outer-shadow-dm active" : "filterItem outer-shadow active"} data-target="Front End" onClick={() => setSelected("Front End")}>Front End </span> : <span className="filterItem" onClick={() => setSelected("Front End")}>Front End</span>}
                         {selected === "Full Stack" ? <span className={theme === "dark" ? "filterItem outer-shadow-dm active" : "filterItem outer-shadow active"} data-target="full-stack" onClick={() => setFull("Full Stack")}>Full Stack</span>: <span className="filterItem" onClick={() => setSelected("Full Stack")}>Full Stack</span>}
                         </div>
                     </div>
-                    {selected === "All" || "Full Stack" ? <div>
+                    {selected === "Full Stack" || "Front End" ? <div>
                         {data.map((project) => (
                             <AllProjects
                                 key={project.id}
@@ -74,6 +74,11 @@ function Portfolio({ theme, setTheme}) {
                                 image5={project.image5}
                                 image6={project.image6}
                                 image7={project.image7}
+                                image8={project.image8}
+                                image9={project.image9}
+                                image10={project.image10}
+                                image11={project.image11}
+                                image12={project.image12}
                                 theme={theme}
                             />
                         ))}

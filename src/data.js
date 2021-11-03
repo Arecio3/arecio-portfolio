@@ -25,8 +25,35 @@ import nozama4 from './images/nozama4.png';
 import nozama5 from './images/nozama5.png';
 import nozama6 from './images/nozama6.png';
 import nozama7 from './images/nozama7.png';
+import hb1 from './images/HB1.png';
+import hb2 from './images/HB2.png';
+import hb3 from './images/HB3.png';
+import hb4 from './images/HB4.png';
+import hb5 from './images/HB5.png';
+import hb6 from './images/HB6.png';
+import hb1Mob from './images/HB1Mob.png';
+import hb2Mob from './images/HB2Mob.png';
+import hb3Mob from './images/HB3Mob.png';
+import hb4Mob from './images/HB4Mob.png';
+import hb5Mob from './images/HB5Mob.png';
+import hb6Mob from './images/HB6Mob.png';
+import vh1 from './images/VH1.png';
+import vh2 from './images/VH2.png';
+import vh3 from './images/VH3.png';
+import vh4 from './images/VH4.png';
+import vh5 from './images/VH5.png';
+import vh1Mob from './images/VH1Mob.png';
+import vh2Mob from './images/VH2Mob.png';
+import vh3Mob from './images/VH3Mob.png';
+import vh4Mob from './images/VH4Mob.png';
+import vh5Mob from './images/VH5Mob.png';
+import vh6Mob from './images/VH6Mob.png';
+import pnado1 from  './images/popnado1.png'
+import pnado2 from  './images/popnado2.png'
+import pnado3 from  './images/popnado3.png'
+import pnado4 from  './images/popnado4.png'
 
-const FullStack = [
+export const FullStack = [
     {
         id: 1,
         title: "Halo",
@@ -107,14 +134,62 @@ const FullStack = [
         image7: nozama7,
         category: "Full Stack",
         repo: "https://github.com/Arecio3/nozama"
-    },
+    }
+]
+
+export const Frontend = [
     {
         id: 7,
         title: "Popnado",
         tools: "Python 3, Folium, Pandas",
         description: "Have you ever wanted an app that can tell you where the Volcanoes in the U.S are as well as a complete interactive map! I do plan on expanding population data right now is only color coded.",
+        URL: "https://arecio3.github.io/popnado/",
+        image: pnado1,
+        image2: pnado2,
+        image3: pnado3,
+        image4: pnado4,
         category: "Front End",
+        repo: "https://github.com/Arecio3/popnado"
+    },
+    {
+        id: 8,
+        title: "HummingBird",
+        tools: "React JS, i18njs, styled-components, Formspree, JavaScript",
+        description: "A front end website for a Landscaping business called Hummingbird if you need to contact someone for lawn services in Tampa, Florida contact them through the contact page! Thanks to formspree",
+        URL: "https://hummingbirdlawn.com/",
+        image: hb1,
+        image2: hb2,
+        image3: hb3,
+        image4: hb4,
+        image5: hb5,
+        image6: hb6,
+        image7: hb1Mob,
+        image8: hb2Mob,
+        image9: hb3Mob,
+        image10: hb4Mob,
+        image11: hb5Mob,
+        image12: hb6Mob,
+        category: "Front End",
+        repo: "https://github.com/Arecio3/Humming_bird"
+    },
+    {
+        id: 9,
+        title: "Value Haulers",
+        tools: "React JS, i18njs, styled-components, Formspree, JavaScript",
+        description: "A front end website for a National Trucking business called Value Haulers if your a business in the United States and needs a load contact them through the contact page! Thanks to formspree",
+        URL: "https://value-haulers.web.app/",
+        image: vh1,
+        image2: vh2,
+        image3: vh3,
+        image4: vh4,
+        image5: vh5,
+        image6: vh1Mob,
+        image7: vh2Mob,
+        image8: vh3Mob,
+        image9: vh4Mob,
+        image10: vh5Mob,
+        image11: vh6Mob,
+        category: "Front End",
+        repo: "https://github.com/Arecio3/value-haulers"
     }
 ]
-
-export default FullStack;

@@ -6,7 +6,7 @@ import './allprojects.css';
 function AllProjects({ id, handleClose, title,tools,description, url, image, image2, image3, image4, image5, image6, image7, category,repo, clicked,setClicked, theme}) {
     const [project, setProject] = useState("");
 
-    const projectFilters = ["Documaker", "Hermes", "Searchy", "Halo", "Stockchasr", "Nozama"];
+    const projectFilters = ["Documaker", "Hermes", "Searchy", "Halo", "Stockchasr", "Nozama", "Popnado", "HummingBird", "Value Haulers"];
 
     const handleClick = () => {
         //  this.setState({ clicked: this.state.clicked})
@@ -26,9 +26,20 @@ function AllProjects({ id, handleClose, title,tools,description, url, image, ima
         } else if (id === 5){
             setProject(projectFilters[4])
             setClicked(5)
-        } else {
+        } else if (id === 7) {
+            setProject(projectFilters[6])
+            setClicked(6)
+        } else if (id === 6) {
             setProject(projectFilters[5])
             setClicked(6)
+        }
+        else if ( id === 8 ) {
+            setProject(projectFilters[7])
+            setClicked(8)
+        }
+        else {
+            setProject(projectFilters[8])
+            setClicked(9)
         }
     }
 
@@ -40,7 +51,7 @@ function AllProjects({ id, handleClose, title,tools,description, url, image, ima
                 <div className={theme === "dark" ? "portfolio-item-inner outer-shadow-dm" : "portfolio-item-inner outer-shadow"}>
                     <div className={"portfolio-item-img"} >
 
-                        <img src={image} alt="" data-category="full-stack" data-screenshots="images/blog2.png, images/blog3.png, images/blog4.png, images/blog5.png, images/blog6.png, images/blog7.png" />
+                        <img src={image} alt=""  />
                         {/* View Project Button */}
                         <span className={theme === "dark" ? "view-project active" : "view-project"} onClick={handleClick}>View Project</span>
                         {/* { open > 0  ? <Popup title={title} image={image} url={url} id={setOpen} category={category} repo={repo} description={description} tools={tools} open={open} setOpen={setOpen} /> : ''}  */}
