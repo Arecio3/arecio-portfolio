@@ -177,7 +177,7 @@ export const Frontend = [
         title: "Value Haulers",
         tools: "React JS, i18njs, styled-components, Formspree, JavaScript",
         description: "A front end website for a National Trucking business called Value Haulers if your a business in the United States and needs a load contact them through the contact page! Thanks to formspree",
-        URL: "https://value-haulers.web.app/",
+        URL: "https://valuehaulers.com/",
         image: vh1,
         image2: vh2,
         image3: vh3,
