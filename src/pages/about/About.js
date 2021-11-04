@@ -37,7 +37,7 @@ function About({ theme, setTheme }) {
                             <a className={theme === "dark" ? "outer-shadow-dm hover-in-shadow-dm" : "outer-shadow hover-in-shadow"} href="https://twitter.com/HeyItsArecio" target="_blank" rel="noreferrer noopener">
                                 <i className="fab fa-twitter-square" id="twitterIcon"></i>
                             </a>
-                            <a className={theme === "dark" ? "outer-shadow-dm hover-in-shadow-dm" : "outer-shadow hover-in-shadow"} href="https://www.instagram.com/areciooo/" target="_blank" rel="noreferrer noopener">
+                            <a className={theme === "dark" ? "outer-shadow-dm hover-in-shadow-dm" : "outer-shadow hover-in-shadow"} href="https://www.instagram.com/areciocodes/" target="_blank" rel="noreferrer noopener">
                                 <i className="fab fa-instagram-square" id="instagramIcon"></i>
                             </a>
                             <a className={theme === "dark" ? "outer-shadow-dm hover-in-shadow-dm" : "outer-shadow hover-in-shadow"} href="https://www.pinterest.com/areciocanton/_saved/" target="_blank" rel="noreferrer noopener">
