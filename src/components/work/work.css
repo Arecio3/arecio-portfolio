@@ -1,0 +1,9 @@
+.work-link {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+.work-link:hover {
+    color: var(--gold-color);
+}

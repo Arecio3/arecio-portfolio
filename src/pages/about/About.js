@@ -3,13 +3,14 @@ import { useState } from 'react';
 import Me from "../../images/selfie.png";
 import Education from "../../components/education/Education";
 import Skills from '../../components/skills/Skills';
+import Work from '../../components/work/Work';
 import selfieDm from "../../images/selfieDm.jpeg";
 import { Link } from 'react-router-dom';
 
 const resume = "https://docdro.id/XKAWXMQ";
 
 function About({ theme, setTheme }) {
-    const [selected, setSelected] = useState(1);
+    const [selected, setSelected] = useState(2);
 
     const setActive = (index) => {
         setSelected(index)
@@ -62,11 +63,12 @@ function About({ theme, setTheme }) {
                     <div className="aboutTabs">
                     {selected === 1 ? <span className= {theme === "dark" ? "tab-item outer-shadow-dm active" : "tab-item outer-shadow active"} data-target=".skills" onClick={() => setActive(1)}>Skills</span> : <span className= "tab-item" onClick={() => setActive(1)}>Skills</span>}
                     {selected === 2 ? <span className={theme === "dark" ? "tab-item outer-shadow-dm active" : "tab-item outer-shadow active"} data-target=".education" onClick={() => setActive(2)}>Education</span> : <span className= "tab-item" onClick={() => setActive(2)}>Education</span>}
+                    {selected === 3 ? <span className={theme === "dark" ? "tab-item outer-shadow-dm active" : "tab-item outer-shadow active"} data-target=".work" onClick={() => setActive(2)}>Work</span> : <span className= "tab-item" onClick={() => setActive(3)}>Work</span>}
                     </div>
                 </div>
                 {/* About tabs end */}
                 {selected === 1 ? <Skills theme={theme} setTheme={setTheme}/> :
-                 <Education theme={theme} setTheme={setTheme}/>}
+                 selected === 2  ?<Education theme={theme} setTheme={setTheme}/> : <Work theme={theme} setTheme={setTheme}/>}
             </div>
         </section>
     )
