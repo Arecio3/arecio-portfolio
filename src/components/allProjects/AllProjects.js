@@ -3,7 +3,7 @@ import './allprojects.css';
 
 
 
-function AllProjects({ id, handleClose, title,tools,description, url, image, image2, image3, image4, image5, image6, image7, category,repo, clicked,setClicked, theme}) {
+function AllProjects({ id, handleClose, title,tools,description, url, image, image2, image3, image4, image5, image6, image7, category,repo, clicked,setClicked, theme,thumbnail}) {
     const [project, setProject] = useState("");
 
     const projectFilters = ["Documaker", "Hermes", "Searchy", "Halo", "Stockchasr", "Nozama", "Popnado", "HummingBird", "Value Haulers"];
@@ -51,7 +51,7 @@ function AllProjects({ id, handleClose, title,tools,description, url, image, ima
                 <div className={theme === "dark" ? "portfolio-item-inner outer-shadow-dm" : "portfolio-item-inner outer-shadow"}>
                     <div className={"portfolio-item-img"} >
 
-                        <img src={image} alt=""  />
+                        <img src={thumbnail} alt=""  />
                         {/* View Project Button */}
                         <span className={theme === "dark" ? "view-project active" : "view-project"} onClick={handleClick}>View Project</span>
                         {/* { open > 0  ? <Popup title={title} image={image} url={url} id={setOpen} category={category} repo={repo} description={description} tools={tools} open={open} setOpen={setOpen} /> : ''}  */}

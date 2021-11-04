@@ -80,6 +80,7 @@ function Portfolio({ theme, setTheme}) {
                                 image11={project.image11}
                                 image12={project.image12}
                                 theme={theme}
+                                thumbnail={project.thumbnail}
                             />
                         ))}
                     </div> : ''}
