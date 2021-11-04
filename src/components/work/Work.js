@@ -14,7 +14,7 @@ function Work({ theme, setTheme}) {
                                     <span>09/1/21 - 9/21/21</span>
                                     <h3>Hummingbird LLC</h3>
                                     <h4>Front-End Website</h4>
-                                    <a href="https://hummingbirdlawn.com/"className="work-link">Site</a>
+                                    <a href="https://hummingbirdlawn.com/"className="work-link" target="_blank" rel="noreferrer noopener">Site</a>
                                     <p>A Professional Landscaping business with a review section, modern UI/UX, responsive, translation, and fully functional contact form!</p>
                                 </div>
                             </div>
@@ -26,7 +26,7 @@ function Work({ theme, setTheme}) {
                                     <span>10/10/21 - 11/01/21</span>
                                     <h3>Value Haulers LLC</h3>
                                     <h4>Front-End Website</h4>
-                                    <a href="https://valuehaulers.com/"className="work-link">Site</a>
+                                    <a href="https://valuehaulers.com/"className="work-link" target="_blank" rel="noreferrer noopener">Site</a>
                                     <p>A National Trucking business with a review section, modern UI/UX, responsive, translation, and fully functional contact form!</p>
                                 </div>
                             </div>
