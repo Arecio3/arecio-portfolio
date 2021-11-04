@@ -1,5 +1,4 @@
 import './header.css';
-import { Link } from 'react-router-dom';
 import { CgSun } from 'react-icons/cg'
 import { HiMoon } from 'react-icons/hi'
 
@@ -20,7 +19,8 @@ function Header({ menuOpen, setMenuOpen, theme, setTheme }) {
             <div className="container">
                 <div className="row justify-content-between">
                     <div className="logoContainer">
-                       <Link to='/'><span className="logo">A</span></Link>
+                       <a href="#home"><span className="logo">A</span>
+                    </a>
                     </div>
                     <div className="toggleTheme">
                         <button className={theme === "dark" ? "toggleTheme outer-shadow-dm hover-in-shadow-dm active" : "toggleTheme outer-shadow hover-in-shadow"} onClick={changeTheme}>{icon}</button>

@@ -74,23 +74,26 @@
 }
 
 #facebookIcon {
-    color: #385898;
+    color: var(--gold-color);
 }
 
 #twitterIcon {
-    color: #1da1f2;
+    color: var(--gold-color);
 }
 
 #pintrestIcon {
-    color: crimson;
+    color: var(--gold-color)
 }
 
 #linkedIn {
-    color: #0a66c2;
+    color: var(--gold-color);
 }
 
 #github{
-    color: var(--text-black-600);
+    color: var(--gold-color);
+}
+#instagramIcon{
+    color: var(--gold-color);
 }
 
 .about-section .aboutInfo {
