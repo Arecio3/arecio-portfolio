@@ -51,7 +51,7 @@ function AllProjects({ id, handleClose, title,tools,description, url, image, ima
                 <div className={theme === "dark" ? "portfolio-item-inner outer-shadow-dm" : "portfolio-item-inner outer-shadow"}>
                     <div className={"portfolio-item-img"} >
 
-                        <img src={thumbnail} alt=""  />
+                        <img src={thumbnail} alt="project thumbnail" onClick={handleClick}/>
                         {/* View Project Button */}
                         <span className={theme === "dark" ? "view-project active" : "view-project"} onClick={handleClick}>View Project</span>
                         {/* { open > 0  ? <Popup title={title} image={image} url={url} id={setOpen} category={category} repo={repo} description={description} tools={tools} open={open} setOpen={setOpen} /> : ''}  */}
