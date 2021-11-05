@@ -120,8 +120,8 @@
 }
 
 .effect-1 {
-  width: 30px;
-  height: 30px;
+  width: 80px;
+  height: 80px;
   border: 4px solid #90e0ff;
   right: 10%;
   bottom: 10%;
@@ -131,7 +131,7 @@
 .effect-2 {
   left: 3%;
   bottom: 20%;
-  width: 40px;
+  width: 75px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -139,16 +139,16 @@
 }
 
 .effect-2 div {
-  height: 3px;
-  width: 3px;
+  height: 4px;
+  width: 4px;
   background-color: #ff3840;
   margin: 0 3px 8px;
   opacity: 0.5;
 }
 
 .effect-3 {
-  height: 180px;
-  width: 180px;
+  height: 200px;
+  width: 200px;
   border: 25px solid var(--navy-color);
   border-radius: 50%;
   left: 50%;
@@ -157,8 +157,8 @@
 }
 
 .effect-4 {
-  border-top: 30px solid transparent;
-  border-left: 30px solid #992243;
+  border-top: 40px solid transparent;
+  border-left: 40px solid #992243;
   left: 30%;
   top: 20%;
   animation: spin 15s linear infinite;
@@ -166,8 +166,8 @@
 
 .effect-4:before {
   content: "";
-  border-top: 40px solid transparent;
-  border-left: 40px solid #992243;
+  border-top: 60px solid transparent;
+  border-left: 60px solid #992243;
   position: absolute;
   opacity: 0.5;
   left: -35px;
@@ -175,8 +175,8 @@
 }
 
 .effect-5 {
-  height: 50px;
-  width: 50px;
+  height: 110px;
+  width: 110px;
   right: 10%;
   top: 30%;
   display: flex;
