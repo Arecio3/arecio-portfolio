@@ -34,12 +34,12 @@ function Contact({ theme, setTheme}) {
                         <div className={theme === "dark" ? "contact-item-inner outer-shadow-dm" : "contact-item-inner outer-shadow"}>
                             <i className="fa fa-map-marker-alt"></i>
                             <span>Located</span>
-                            <p>Tampa, Florida- 33615</p>
+                            <p>Tampa, Florida</p>
                         </div>
                     </div>
                     {/* End of Contact Item */}
                 </div>
-                <div className="psa"><h4>PSA: Make sure to leave your email so we can work together :)</h4></div>
+                <div className="psa"><h4>Fill out this contact form to get in touch!</h4></div>
                 <div className="contact-box">
                     <div className="contact-form">
                         <form onSubmit={handleSubmit}>
