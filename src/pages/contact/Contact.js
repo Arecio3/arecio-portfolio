@@ -2,7 +2,7 @@ import { useForm, ValidationError } from '@formspree/react';
 import './contact.css';
 
 function Contact({ theme, setTheme}) {
-    const [state, handleSubmit] = useForm("xpzkybjr");
+    const [state, handleSubmit] = useForm("mzbyljaa");
     // if (state.succeeded) {
     //     return <p>Thanks for joining!</p>;
     // }
@@ -27,7 +27,7 @@ function Contact({ theme, setTheme}) {
                         <div className={theme === "dark" ? "contact-item-inner outer-shadow-dm" : "contact-item-inner outer-shadow"}>
                             <i className="fa fa-envelope"></i>
                             <span>Gmail</span>
-                            <p>cuba289@gmail.com</p>
+                            <p>areciocodes@gmail.com</p>
                         </div>
                     </div>
                     <div className="contact-item">

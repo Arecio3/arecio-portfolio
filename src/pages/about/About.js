@@ -7,7 +7,7 @@ import Work from '../../components/work/Work';
 import selfieDm from "../../images/selfieDm.jpeg";
 import { Link } from 'react-router-dom';
 
-const resume = "https://docdro.id/XKAWXMQ";
+const resume = "https://docdro.id/086tPER";
 
 function About({ theme, setTheme }) {
     const [selected, setSelected] = useState(2);
@@ -34,7 +34,7 @@ function About({ theme, setTheme }) {
                             <a className={theme === "dark" ? "outer-shadow-dm hover-in-shadow-dm" : "outer-shadow hover-in-shadow"} href="https://www.facebook.com/arecio.canton.1" target="_blank" rel="noreferrer noopener">
                                 <i className="fab fa-facebook-square" id="facebookIcon"></i>
                             </a>
-                            <a className={theme === "dark" ? "outer-shadow-dm hover-in-shadow-dm" : "outer-shadow hover-in-shadow"} href="https://twitter.com/HeyItsArecio" target="_blank" rel="noreferrer noopener">
+                            <a className={theme === "dark" ? "outer-shadow-dm hover-in-shadow-dm" : "outer-shadow hover-in-shadow"} href="https://twitter.com/areciocodes" target="_blank" rel="noreferrer noopener">
                                 <i className="fab fa-twitter-square" id="twitterIcon"></i>
                             </a>
                             <a className={theme === "dark" ? "outer-shadow-dm hover-in-shadow-dm" : "outer-shadow hover-in-shadow"} href="https://www.instagram.com/areciocodes/" target="_blank" rel="noreferrer noopener">
