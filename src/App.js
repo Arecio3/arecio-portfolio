@@ -9,7 +9,7 @@ import Portfolio from "./pages/portfolio/Portfolio";
 import Testimonials from './pages/testimonials/Testimonials';
 import Contact from "./pages/contact/Contact";
 import { ThemeProvider } from "styled-components";
-
+import Footer from './components/footer/Footer';
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -41,6 +41,7 @@ function App() {
           <Portfolio theme={theme} setTheme={setTheme}/>
           <Testimonials theme={theme} setTheme={setTheme}/>
           <Contact theme={theme} setTheme={setTheme}/>
+          <Footer theme={theme} setTheme={setTheme}/>
     </ThemeProvider>
   );
 }

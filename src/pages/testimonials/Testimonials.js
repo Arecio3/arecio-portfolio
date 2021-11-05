@@ -7,21 +7,21 @@ function Testimonials({ theme, setTheme}) {
     const data = [
         {
             id: 1,
-            quote: "Amazing Work! Really knowledgeable, fast learner and good communicator!!",
+            quote: "Amazing Work! Really knowledgeable, finished the project ahead of time as well as added extra functionailty!!",
             img: "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg",
-            name: "Patrick Moore"
+            name: "Value Haulers LLC"
         },
         {
             id: 2,
-            quote: "Wide variety of skills awesome communication and enthusiasm!!",
+            quote: "Wide variety of skills awesome communication great designer and is great to work with.",
             img: "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg",
-            name: "Dan Rosenbaum"
+            name: "Hummingbird Lawn Services LLC"
         },
         {
             id: 3,
-            quote: "Great to work with! Awesome team player open to new ideas and willing to learn!",
+            quote: "Awesome leader, is able to pick up new things quickly and delegate calmly.",
             img: "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg",
-            name: "Adam Alcantara"
+            name: "Patrick Moore"
         },
     ]
 
