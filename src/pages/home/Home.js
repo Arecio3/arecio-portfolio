@@ -2,7 +2,6 @@ import './home.css';
 import selfie from "../../images/selfie.png";
 import selfieDm from "../../images/selfieDm.jpeg";
 // import proSelfieDm from '../../images/DSC_1525.jpg'
-import { Link } from "react-router-dom";
 
 function Home({theme, setTheme}) {
     return (
@@ -62,7 +61,7 @@ function Home({theme, setTheme}) {
                         <p>Hello</p>
                         <h2>I'm <span>Arecio</span> Canton</h2>
                         <h1>Full Stack Developer & Web Designer</h1>
-                        <Link to='/about'><span className={ theme === "dark" ? "btn-1 outer-shadow-dm hover-in-shadow-dm active" : "btn-1 outer-shadow hover-in-shadow"}>About Me</span></Link>
+                        <a href='#about'><span className={ theme === "dark" ? "btn-1 outer-shadow-dm hover-in-shadow-dm active" : "btn-1 outer-shadow hover-in-shadow"}>About Me</span></a>
                     </div>
                     <div className="home-img">
                         <div className={theme === "dark" ? "imgBox inner-shadow-dm" : "imgBox inner-shadow"}>

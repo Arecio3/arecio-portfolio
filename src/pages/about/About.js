@@ -5,7 +5,6 @@ import Education from "../../components/education/Education";
 import Skills from '../../components/skills/Skills';
 import Work from '../../components/work/Work';
 import selfieDm from "../../images/selfieDm.jpeg";
-import { Link } from 'react-router-dom';
 
 const resume = "https://docdro.id/086tPER";
 
@@ -55,7 +54,7 @@ function About({ theme, setTheme }) {
                     <div className="aboutInfo">
                         <p><span>Welcome! My name is Arecio Canton, I am a Full Stack Developer and Web Designer.</span> Just graduated from UCF's 3 Month Full Stack Bootcamp and fell in love with programming so much so that I have completed numerous projects, and plan on continuing. I was born in cuba so si hablo español, I am 21 years old and eager to keep learning and my dream is to eventually get to be able to work with AI and AGI.</p>
                         <a href={resume} className={theme === "dark" ? "btn-1 outer-shadow-dm hover-in-shadow-dm" : "btn-1 outer-shadow hover-in-shadow"} target="_blank" rel="noreferrer noopener">Resume</a>
-                        <Link to='/contact'><span className={theme === "dark" ? "btn-1 outer-shadow-dm hover-in-shadow-dm" : "btn-1 outer-shadow hover-in-shadow"} target="_blank" rel="noreferrer noopener">Hire Me</span></Link>
+                        <a href='#contact'><span className={theme === "dark" ? "btn-1 outer-shadow-dm hover-in-shadow-dm" : "btn-1 outer-shadow hover-in-shadow"} target="_blank" rel="noreferrer noopener">Hire Me</span></a>
                     </div>
                 </div>
                 {/* About tabs start */}

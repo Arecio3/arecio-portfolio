@@ -20,14 +20,14 @@ function Contact({ theme, setTheme}) {
                         <div className={theme === "dark" ? "contact-item-inner outer-shadow-dm" : "contact-item-inner outer-shadow"}>
                             <i className="fa fa-phone"></i>
                             <span>Phone</span>
-                            <p>+1 813-385-2938</p>
+                            <p><a href="tel:+18133852938" >Call here +1 813-385-2938</a></p>
                         </div>
                     </div>
                     <div className="contact-item">
                         <div className={theme === "dark" ? "contact-item-inner outer-shadow-dm" : "contact-item-inner outer-shadow"}>
                             <i className="fa fa-envelope"></i>
                             <span>Gmail</span>
-                            <p>areciocodes@gmail.com</p>
+                            <p><a href="mailto: areciocodes@gmail.com" target="_blank" rel="noreferrer noopener">areciocodes@gmail.com</a></p>
                         </div>
                     </div>
                     <div className="contact-item">
